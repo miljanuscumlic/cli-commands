@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "miljanuscumlic",
+      "name": "Miljan Ušćumlić",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/30440470?v=4",
+      "profile": "https://www.linkedin.com/in/miljanuscumlic/",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "terminal-commands",
+  "projectOwner": "miljanuscumlic",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
