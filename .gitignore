@@ -1,0 +1,4 @@
+# vim
+*.swp
+# kdiff3
+*.orig
