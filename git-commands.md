@@ -69,8 +69,10 @@
 | `git log -<number>` | show given number of a most recent commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt--ltnumbergt) |
 | `git log -S <string>` | show commits in which given string is added or removed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt--Sltstringgt) |
 | `git log -p -<number>` | show given number of most recent commits with their diffs | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt--p) |
+| `git log ..@{u}` | list upstream commits that aren't pulled yet | lists commits reachable from a upstream branch, but not from the HEAD of the current local branch | 2.21.0 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt-ltrevisionrangegt) |
 | `git log <first_branch> --not <second_branch>` | show commits from the first branch not contained in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--branches--not--remotesorigincode) |
 | `git log <first_branch>..<second_branch>` | show commits from the second branch not contained in the first branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--name-statusreleasetestcode) |
+| `git log @{u}..` | list local commits that aren't pushed yet | lists commits reachable from a HEAD of the local current branch, but not from the upstream branch | 2.21.0 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt-ltrevisionrangegt) |
 | `git log ^<first_branch> <second_branch>` | show commits from the second branch not contained in the first branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--name-statusreleasetestcode) |
 | `git ls-files -o` | list all untracked files in the working directory | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-files#Documentation/git-ls-files.txt--o) |
 | `git ls-files -o -i --exclude-standard` | list all ignored files in the working directory | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-files#Documentation/git-ls-files.txt---exclude-standard) |
