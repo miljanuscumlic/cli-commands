@@ -19,13 +19,13 @@ In the best case scenario **Version** column should contain the software version
 
 ## How to Contribute
 
-Please read [CONTRIBUTING.md](https://github.com/miljanuscumlic/terminal-commands/blob/git/CONTRIBUTING.md) for details on submitting pull requests to the project.
+Please read [CONTRIBUTING.md](https://github.com/miljanuscumlic/terminal-commands/blob/develop/CONTRIBUTING.md) for details on submitting pull requests to the project.
 
 ## Contributors ✨
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](https://github.com/miljanuscumlic/terminal-commands/blob/git/CONTRIBUTORS.md).
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](https://github.com/miljanuscumlic/terminal-commands/blob/develop/CONTRIBUTORS.md).
 
 ## License
 
-This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/terminal-commands/blob/git/UNLICENSE) file for details.
+This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/terminal-commands/blob/develop/UNLICENSE) file for details.
 
