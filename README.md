@@ -14,18 +14,18 @@ Every file containing terminal commands has a header:
    | Command | Description | Note | Version | Docs |
    |:--- |:--- |:--- |:--- |:--- |
 
-In the best case scenario **Version** column should contain the software version that introduced particular command. Inspite of that it may and usually does contain the earliest known version in which the command is tested to work.<br />
-**Docs** column contains official documentation link describing the command in question.
+In the best case scenario **Version** column should contain the software version that introduced the particular command. Inspite of that it may and usually does contain the earliest known version in which the command is tested to work.<br />
+**Docs** column contains the official documentation link describing the command in question.
 
 ## How to Contribute
 
-Please read [CONTRIBUTING.md](https://github.com/miljanuscumlic/terminal-commands/blob/git/CONTRIBUTING.md) for details on submitting pull requests to the project.
+Please read [CONTRIBUTING.md](https://github.com/miljanuscumlic/terminal-commands/blob/master/CONTRIBUTING.md) for more details on submitting pull requests to the project.
 
 ## Contributors ✨
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](https://github.com/miljanuscumlic/terminal-commands/blob/git/CONTRIBUTORS.md).
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](https://github.com/miljanuscumlic/terminal-commands/blob/master/CONTRIBUTORS.md).
 
 ## License
 
-This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/terminal-commands/blob/git/UNLICENSE) file for details.
+This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/terminal-commands/blob/master/UNLICENSE) file for details.
 
