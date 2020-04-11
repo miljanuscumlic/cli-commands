@@ -130,10 +130,17 @@
 | `git rm --cached <file_name>` | untrack the file, remove it from the index but not from the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt---cached) |
 | `git rm -f` | remove file from the index and the working tree | deletes a file | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt--f) |
 | `git rm <file_name>` | remove the file from the index and the working tree | deletes a file; file must not have staged changes | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt-ltfilegt82308203) |
+<<<<<<< HEAD
 | `git show --name-only <commit_hash>` | show message header and list filenames of the files changed by a given commit | | 2.21.0 | [link](https://www.git-scm.com/docs/git-show#Documentation/git-show.txt---name-only) |
 | `git show <commit_hash>` | show commit's log message with its diff | | 2.20.1 | [link](https://git-scm.com/docs/git-show#_description) |
 | `git show <commit_hash>:<file_path>` | show contents of a given file in a specific commit | | 2.21.0 | [link](https://git-scm.com/docs/git-show#_description) |
 | `git show <tag_name>` | show tag's log message with its diff | | 2.20.1 | [link](https://git-scm.com/docs/git-show#_description) |
+=======
+| `git shortlog ` | list all commit message titles grouped by their author | | 2.20.1 | [link](https://git-scm.com/docs/git-shortlog) |
+| `git show --name-status --pretty="" <commit_hash>`| list name and status of all the files changed by the given commit | | 2.20.1 | [link](https://git-scm.com/docs/git-show#Documentation/git-show.txt---name-status) |
+| `git show <commit_hash>` | show commit's log message with its diff | diff comparison to the previous commit is shown | 2.20.1 | [link](https://git-scm.com/docs/git-show#_description) |
+| `git show <tag_name>` | show tagged commit's log message with its diff | diff comparison to the previous commit is shown | 2.20.1 | [link](https://git-scm.com/docs/git-show#_description) |
+>>>>>>> f3e6e87 ([git] Add commands shortlog and show)
 | `git stash` | stash all staged and unstaged changes | same as `git stash push` | 2.20.1 | [link](https://git-scm.com/docs/git-stash#_description) |
 | `git stash --all` | stage all staged, unstaged changes including untracked and ignored files | | 2.20.1 | [link](https://git-scm.com/docs/git-stash#Documentation/git-stash.txt-push-p--patch-k--no-keep-index-u--include-untracked-a--all-q--quiet-m--messageltmessagegt--ltpathspecgt82308203) |
 | `git stash -u` | stash all staged, unstaged and untracked changes | does not include ignored files | 2.20.1 | [link](https://git-scm.com/docs/git-stash#Documentation/git-stash.txt-push-p--patch-k--no-keep-index-u--include-untracked-a--all-q--quiet-m--messageltmessagegt--ltpathspecgt82308203) |
