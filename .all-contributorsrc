@@ -1,8 +1,13 @@
 {
+  "projectName": "terminal-commands",
+  "projectOwner": "miljanuscumlic",
   "files": [
-    "README.md",
     "CONTRIBUTORS.md"
   ],
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "contributorsPerLine": 7,
   "imageSize": 100,
   "commit": false,
   "contributors": [
@@ -24,11 +29,5 @@
         "doc"
       ]
     }
-  ],
-  "contributorsPerLine": 7,
-  "projectName": "terminal-commands",
-  "projectOwner": "miljanuscumlic",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "skipCi": true
+  ]
 }
