@@ -1,12 +1,12 @@
 | Command | Description | Note | Version | Docs |
 |:--- |:--- |:--- |:--- |:--- |
 | `git add -A` | add, remove and modify index entries to match the state of the working tree | stages all changes | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--A) |
-| `git add -N <file_name>` | track given file and add it to the index without its content | | 2.20.1 | [link](https://www.git-scm.com/docs/git-add#Documentation/git-add.txt--N) |
+| `git add -N <file_path>` | track given file and add it to the index without its content | | 2.20.1 | [link](https://www.git-scm.com/docs/git-add#Documentation/git-add.txt--N) |
 | `git add -u` | remove and modify index entries to match the state of deleted and modified files in the working tree | stages modifications and deletions, but not new files | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--u) |
 | `git add .` | add and modify index entries to match the state of the new and modified files in the working tree | stages new files and modifications, but not deletions | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203) |
-| `git add <file_name>` | add, remove or modify index entry of the specified file to match its state in the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203) |
-| `git blame <file_name>` | annotate each line of a given file with information like hash, author name, timestamp of the most recent revision, and show all annotated lines | | 2.20.1 | [link](https://www.git-scm.com/docs/git-blame#_description) |
-| `git blame <file_name> -L <start>:<end>`| annotate given line range with revision information like hash, author name, timestamp of the most recent revision of a given file, and list all annotated lines | | 2.20.1 | [link](https://www.git-scm.com/docs/git-blame#Documentation/git-blame.txt--Lltstartgtltendgt) |
+| `git add <file_path>` | add, remove or modify index entry of the specified file to match its state in the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203) |
+| `git blame <file_path>` | annotate each line of a given file with information like hash, author name, timestamp of the most recent revision, and show all annotated lines | | 2.20.1 | [link](https://www.git-scm.com/docs/git-blame#_description) |
+| `git blame <file_path> -L <start>:<end>`| annotate given line range with revision information like hash, author name, timestamp of the most recent revision of a given file, and list all annotated lines | | 2.20.1 | [link](https://www.git-scm.com/docs/git-blame#Documentation/git-blame.txt--Lltstartgtltendgt) |
 | `git branch` | list the local branches | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#_description) |
 | `git branch --merged` | list all local branches being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---mergedltcommitgt) |
 | `git branch --no-merged` | list all local branches not being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---no-mergedltcommitgt) |
@@ -29,9 +29,9 @@
 | `git checkout -t <remote>/<remote_branch_name>` | create new local branch which tracks given remote branch and switch to that local branch | newly created local branch will have the same name as a remote branch | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt--t) |
 | `git checkout .` | discard (unstaged) changes of all the files in the working directory | | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-emgitcheckoutem-f--ours--theirs-m--conflictltstylegtlttree-ishgt--ltpathspecgt82308203) |
 | `git checkout <branch_name>` | switch to a branch | | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-emgitcheckoutemltbranchgt) |
-| `git checkout <branch_name> <file_name>` | use the contents of the file from the branch by overwriting the file in the current local branch | file with the same name must exist in the current local branch | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#_description) |
+| `git checkout <branch_name> <file_path>` | use the contents of the file from the branch by overwriting the file in the current local branch | file with the same name must exist in the current local branch | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#_description) |
 | `git checkout <commit_hash>` | check out the state of the working tree of the given commit | moves user to the `detached HEAD` state | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#_description) |
-| `git checkout <file_name>` | discard (unstaged) changes of a file in the working directory | | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-emgitcheckoutem-f--ours--theirs-m--conflictltstylegtlttree-ishgt--ltpathspecgt82308203) |
+| `git checkout <file_path>` | discard (unstaged) changes of a file in the working directory | | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-emgitcheckoutem-f--ours--theirs-m--conflictltstylegtlttree-ishgt--ltpathspecgt82308203) |
 | `git checkout <tag_name>` | check out the state of the working tree of the given tag | moves user to the`'detached HEAD` state | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#_description) |
 | `git checkout @{-1}` | check out previously checked out branch | | 2.21.0 | |
 | `git cherry-pick <commit_hash>` | apply the changes given commit introduces to the current branch by recording a new commit to it | working tree must be clean | 2.20.1 | [link](https://git-scm.com/docs/git-cherry-pick#_description) |
@@ -62,9 +62,9 @@
 | `git fetch <remote_name> <branch_name>` | fetch data of a given remote branch only, updating remote-tracking branch | does not change the copy of a local branch | 2.20.1 | [link](https://git-scm.com/docs/git-fetch#_description) |
 | `git fetch <remote_name> <remote_branch_name>:<local_branch_name>` | fetch and pull! data from the remote branch to the given local branch other than the currently checked out local branch | does not touch the index and working tree | 2.20.1 | [link](https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt-ltrefspecgt) |
 | `git init` | create an empty git repository or reinitialize the existing one | | 2.20.1 | [link](https://git-scm.com/docs/git-init#_name) |
-| `git log -- <file_name>` | show commits in which the file was committed and changed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-ltpathsgt) |
+| `git log -- <file_path>` | show commits in which the file was committed and changed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-ltpathsgt) |
 | `git log --author="<author_name>" -- <directory_name>/ ` | show commits of the given author of the changed files that belong to specified directory | `<author_name>` can be a sub-string of the actual author name | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---authorltpatterngt) |
-| `git log --follow -- <file_name>` | show all commits in which the file has been changed including the commits before file being renamed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---follow) |
+| `git log --follow -- <file_path>` | show all commits in which the file has been changed including the commits before file being renamed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---follow) |
 | `git log --grep=<pattern>` | show commits which messages match specified regular expression pattern | | 2.20.1 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt---grepltpatterngt) |
 | `git log --left-right <first_branch>..<second_branch>` | list of all commits contained in the first branch and not in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---left-right) |
 | `git log --oneline` | show concise one line information about the commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---oneline) |
@@ -125,11 +125,11 @@
 | `git reset --hard <repository>/<branch_name>` | uncommit + unstage + delete changes, nothing left, state set to the state of the remote-tracking branch | | 2.20.1 | [link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard) |
 | `git reset --mixed <commit_hash>` | uncommit + unstage changes, all changes made after the given commit are left in the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed) |
 | `git reset --soft <commit_hash>` | uncommit changes, all changes after the given commit are left staged | | 2.20.1 | [link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---soft) |
-| `git reset HEAD <file_name>` | unstage the file, changes are left in working tree | mixed reset of a file | 2.20.1 | [link](https://git-scm.com/docs/git-reset#_description) |
+| `git reset HEAD <file_path>` | unstage the file, changes are left in working tree | mixed reset of a file | 2.20.1 | [link](https://git-scm.com/docs/git-reset#_description) |
 | `git revert <commit_hash>` | revert changes introduced by a particular commit and add new commit stating this change | | 2.20.1 | [link](https://git-scm.com/docs/git-revert#Documentation/git-revert.txt-ltcommitgt82308203) |
-| `git rm --cached <file_name>` | untrack the file, remove it from the index but not from the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt---cached) |
+| `git rm --cached <file_path>` | untrack the file, remove it from the index but not from the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt---cached) |
 | `git rm -f` | remove file from the index and the working tree | deletes a file | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt--f) |
-| `git rm <file_name>` | remove the file from the index and the working tree | deletes a file; file must not have staged changes | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt-ltfilegt82308203) |
+| `git rm <file_path>` | remove the file from the index and the working tree | deletes a file; file must not have staged changes | 2.20.1 | [link](https://git-scm.com/docs/git-rm#Documentation/git-rm.txt-ltfilegt82308203) |
 <<<<<<< HEAD
 | `git show --name-only <commit_hash>` | show message header and list filenames of the files changed by a given commit | | 2.21.0 | [link](https://www.git-scm.com/docs/git-show#Documentation/git-show.txt---name-only) |
 | `git show <commit_hash>` | show commit's log message with its diff | | 2.20.1 | [link](https://git-scm.com/docs/git-show#_description) |

@@ -27,6 +27,6 @@
 
 ## Additional notes
 
-It is a good practice to test how markdown file you are modifying looks like, before you push your changes to the repository. Although the rendering isn't completely the same as on the github for this purpose you can use this [site](https://markdown-it.github.io/).
+It is a good practice to test how markdown file you are modifying looks like before you push your changes to the repository. Although the rendering isn't completely the same as on the github for this purpose you can use this [site](https://markdown-it.github.io/).
 
 If you would like to start documenting commands for a tool or a program that doesn't yet have its `.md` file you are advised to start from the [template](https://github.com/miljanuscumlic/terminal-commands/blob/master/template.md). Name the file by the tool you are documenting and place it in the `/commands` directory.
