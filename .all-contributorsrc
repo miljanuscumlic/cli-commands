@@ -1,7 +1,7 @@
 {
   "files": [
     "README.md",
-	"CONTRIBUTORS.md"
+    "CONTRIBUTORS.md"
   ],
   "imageSize": 100,
   "commit": false,
@@ -11,6 +11,15 @@
       "name": "Miljan Ušćumlić",
       "avatar_url": "https://avatars1.githubusercontent.com/u/30440470?v=4",
       "profile": "https://www.linkedin.com/in/miljanuscumlic/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "eevan78",
+      "name": "eevan78",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/27575106?v=4",
+      "profile": "https://github.com/eevan78",
       "contributions": [
         "doc"
       ]
