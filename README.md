@@ -1,6 +1,12 @@
 # terminal-commands
 <<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+>>>>>>> ac2593d (docs: update README.md [skip ci])
 Useful terminal commands for git and other sofware tools and programs.
 
 ## Usage
