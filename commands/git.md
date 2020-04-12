@@ -40,6 +40,7 @@
 | `git commit --amend` | replace the most recent commit with the new one by including all that is in the index and launch default editor to optionally amend commit message | | 2.20.1 | [link](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---amend) |
 | `git commit --amend --no-edit` | replace the most recent commit with the new one by including all that is in the index without launching default editor | | 2.20.1 | [link](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---no-edit) |
 | `git commit -am <message>` | stage tracked and modified files and commit them with the message | | 2.20.1 | [link](https://git-scm.com/docs/git-commit#_description) |
+| `git commit -m "<message>" -S<key_id>` | commit staged changes to the local repository and sign commit using GPG key | prior to this command GPG key must be generated; `key_id` can be omitted if `user.signingkey` variable is set in the git configuration file | 2.20.1 | [link](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--Sltkeyidgt) |
 | `git commit -m "<subject>" -m "<description>"` | commit staged changes with a message to the local repository | in bash description can be multiple lines long | 2.20.1 | [link](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt--mltmsggt) |
 | `git config --get <variable_name>` | get the configuration variable value | | 2.20.1 | [link](https://git-scm.com/docs/git-config#Documentation/git-config.txt---get) |
 | `git config --global --replace-all <variable_name> "<value>"` | replace all entries of the same configuration variable name with a new value in user specific configuration file `~/.gitconfig` | | 2.20.1 | [link](https://git-scm.com/docs/git-config#Documentation/git-config.txt---replace-all) |
@@ -153,8 +154,11 @@
 | `git status` | show the working tree status | | 2.20.1 | [link](https://git-scm.com/docs/git-status) |
 | `git status -s` | show the working tree status in the short form | | 2.20.1 | [link](https://git-scm.com/docs/git-status#Documentation/git-status.txt--s) |
 | `git tag` | list all tags | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#_name) |
-| `git tag -a <tag_name> -m "<message>"` | create new annotated tag with the message | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--mltmsggt) |
+| `git tag -a <tag_name> -m "<message>"` | create new annotated tag with the message on the most recent tag | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--mltmsggt) |
+| `git tag -a <tag_name> -s`| create new annotated tag on the most recent commit and sign it | prior to this command GPG key must be generated and `user.signingkey` variable must be set in the git configuration file | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--s) |
 | `git tag -a <tag_name> <commit_hash>` | create new annotated tag that refer to a given commit hash | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt-ltcommitgt) |
 | `git tag -d <tag_name>` | delete tag from the local repository | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--d) |
 | `git tag -n<number>` | list all tags and print the given number of lines of a tag annotation | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--nltnumgt) |
 | `git tag <tag_name>` | create new lightweight tag on the most recent commit | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#_description) |
+| `git verify-commit <commit_hash>` | validate GPG signature of a given commit | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-commit) |
+| `git verify-tag <tag_name>` | validate GPG signature of a given tag | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-tag) |
