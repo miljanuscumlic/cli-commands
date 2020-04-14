@@ -1,17 +1,25 @@
+<<<<<<< HEAD
 # terminal-commands
 <<<<<<< HEAD
+=======
+# cli-commands
+>>>>>>> cab227a (Change the old repository name with the new one: cli-commands)
 
 <<<<<<< HEAD
 =======
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+<<<<<<< HEAD
 >>>>>>> ac2593d (docs: update README.md [skip ci])
 Useful terminal commands for git and other sofware tools and programs.
+=======
+Useful command-line interface commands for git and other software tools and programs.
+>>>>>>> cab227a (Change the old repository name with the new one: cli-commands)
 
 ## Usage
 
-Point your favorite web browser to this simple and fine [repository](https://github.com/miljanuscumlic/terminal-commands) :) and browse through its files while you are building the software at your work or for the fun, hopefully both at the same time. ;)
+Point your favorite web browser to this simple and fine [repository](https://github.com/miljanuscumlic/cli-commands) :blush: and browse through its `/commands` directory while you are building the software at your work or for fun, hopefully both at the same time. :wink:
 
 
 Every file containing terminal commands has a header:
@@ -19,12 +27,12 @@ Every file containing terminal commands has a header:
    | Command | Description | Note | Version | Docs |
    |:--- |:--- |:--- |:--- |:--- |
 
-In the best case scenario **Version** column should contain the software version that introduced the particular command. Inspite of that it may and usually does contain the earliest known version in which the command is tested to work.<br />
+In the best case scenario **Version** column should contain the software version that introduced the particular command. In spite of that it may and usually does contain the earliest known version in which the command is tested to work.<br />
 **Docs** column contains the official documentation link describing the command in question.
 
 ## How to Contribute
 
-Please read [CONTRIBUTING.md](https://github.com/miljanuscumlic/terminal-commands/blob/master/CONTRIBUTING.md) for more details on submitting pull requests to the project.
+Please read [CONTRIBUTING.md](https://github.com/miljanuscumlic/cli-commands/blob/master/CONTRIBUTING.md) for more details on submitting pull requests to the project.
 
 ## Contributors
 
@@ -41,6 +49,7 @@ Useful terminal commands for git
 
 ## Contributors ✨
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,9 +78,12 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 =======
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](https://github.com/miljanuscumlic/terminal-commands/blob/master/CONTRIBUTORS.md).
 >>>>>>> 6d0a8bb ([README] Changed branch in several links)
+=======
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](https://github.com/miljanuscumlic/cli-commands/blob/master/CONTRIBUTORS.md).
+>>>>>>> cab227a (Change the old repository name with the new one: cli-commands)
 
 ## License
 
-This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/terminal-commands/blob/master/UNLICENSE) file for details.
+This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/cli-commands/blob/master/UNLICENSE) file for details.
 
 >>>>>>> 7daf8af (Change file containing contributors)
