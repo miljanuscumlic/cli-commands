@@ -67,7 +67,7 @@
 | `git log --author="<author_name>" -- <directory_name>/ ` | show commits of the given author of the changed files that belong to specified directory | `<author_name>` can be a sub-string of the actual author name | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---authorltpatterngt) |
 | `git log --follow -- <file_path>` | show all commits in which the file has been changed including the commits before file being renamed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---follow) |
 | `git log --grep=<pattern>` | show commits which messages match specified regular expression pattern | | 2.20.1 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt---grepltpatterngt) |
-| `git log --left-right <first_branch>..<second_branch>` | list of all commits contained in the first branch and not in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---left-right) |
+| `git log --left-right <first_branch_name>..<second_branch_name>` | list of all commits contained in the first branch and not in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---left-right) |
 | `git log --oneline` | show concise one line information about the commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---oneline) |
 | `git log --pretty=format:"%h %s" --graph` | show hash and subject of all commits and connect them in a graph | | 2.20.1 | [link](https://git-scm.com/docs/git-log#_pretty_formats) |
 | `git log --stat -<number>` | show log headers and statistics of the most recent given number of commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---statltwidthgtltname-widthgtltcountgt) |
@@ -75,18 +75,19 @@
 | `git log -S <string>` | show commits in which given string is added or removed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt--Sltstringgt) |
 | `git log -p -<number>` | show given number of most recent commits with their diffs | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt--p) |
 | `git log ..@{u}` | list upstream commits that aren't pulled yet | lists commits reachable from a upstream branch, but not from the HEAD of the current local branch | 2.21.0 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt-ltrevisionrangegt) |
-| `git log <first_branch> --not <second_branch>` | show commits from the first branch not contained in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--branches--not--remotesorigincode) |
-| `git log <first_branch>..<second_branch>` | show commits from the second branch not contained in the first branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--name-statusreleasetestcode) |
+| `git log <first_branch_name> --not <second_branch_name>` | show commits from the first branch not contained in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--branches--not--remotesorigincode) |
+| `git log <first_branch_name>..<second_branch_name>` | show commits from the second branch not contained in the first branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--name-statusreleasetestcode) |
 | `git log @{u}..` | list local commits that aren't pushed yet | lists commits reachable from the HEAD of the current local branch, but not from the upstream branch | 2.21.0 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt-ltrevisionrangegt) |
-| `git log ^<first_branch> <second_branch>` | show commits from the second branch not contained in the first branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--name-statusreleasetestcode) |
+| `git log ^<first_branch_name> <second_branch_name>` | show commits from the second branch not contained in the first branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-codegitlog--name-statusreleasetestcode) |
 | `git ls-files -o` | list all untracked files in the working directory | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-files#Documentation/git-ls-files.txt--o) |
 | `git ls-files -o -i --exclude-standard` | list all ignored files in the working directory | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-files#Documentation/git-ls-files.txt---exclude-standard) |
 | `git ls-remote -h <remote_name>` | list remote branches with the hash values of the last commits | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-remote#Documentation/git-ls-remote.txt--h) |
 | `git ls-remote -t` | list remote tags with their hash values | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-remote#Documentation/git-ls-remote.txt--t) |
 | `git ls-remote <remote_name>` | list all remote references (branches, tags) of a repository with their hashes | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-remote#_description) |
 | `git ls-tree -r --name-only <branch-name>` | list all tracked files in the given branch | | 2.20.1 | [link](https://git-scm.com/docs/git-ls-tree#_name) |
-| `git merge --no-ff <branch_name>` | merge the branch into the current branch creating a merge commit in all cases | | 2.20.1 | [link](https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---no-ff) |
+| `git merge --no-ff <branch_name>` | merge the branch into the current branch creating a merge commit in all cases | creates a commit even when a fast-forward is possible | 2.20.1 | [link](https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---no-ff) |
 | `git merge <branch_name>` | merge the branch into the current branch without creating a merge commit if possible (fast-forward) | | 2.20.1 | [link](https://git-scm.com/docs/git-merge#Documentation/git-merge.txt---ff) |
+| `git merge-base <first_branch_name> <second_branch_name>` | find the most recent common ancestor of the given branches | | 2.20.1 | [link](https://git-scm.com/docs/git-merge-base) |
 | `git mergetool` | run previously set merge tool for a conflict resolution | invoked during merge or rebase | 2.20.1 | [link](https://git-scm.com/docs/git-mergetool#_name) |
 | `git mv <old_file_name> <new_file_name>` | rename or move the file | | 2.20.1 | [link](https://git-scm.com/docs/git-mv#_description) |
 | `git pull` | get the changes from the remote repository and incorporate them in the current local branch | remote repository and the name of the upstream remote branch must be set in git configuration file | 2.20.1 | [link](https://git-scm.com/docs/git-pull#_name) | 
@@ -160,5 +161,7 @@
 | `git tag -d <tag_name>` | delete tag from the local repository | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--d) |
 | `git tag -n<number>` | list all tags and print the given number of lines of a tag annotation | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--nltnumgt) |
 | `git tag <tag_name>` | create new lightweight tag on the most recent commit | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#_description) |
+| `git update-git-for-windows -y`| update git on Windows OS | | 2.25.1 | |
 | `git verify-commit <commit_hash>` | validate GPG signature of a given commit | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-commit) |
 | `git verify-tag <tag_name>` | validate GPG signature of a given tag | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-tag) |
+| `git version` | get the version of the installed git | | 2.20.1 | |
