@@ -1,8 +1,13 @@
 {
+  "projectName": "terminal-commands",
+  "projectOwner": "miljanuscumlic",
   "files": [
-    "README.md",
-	"CONTRIBUTORS.md"
+    "CONTRIBUTORS.md"
   ],
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "contributorsPerLine": 7,
   "imageSize": 100,
   "commit": false,
   "contributors": [
@@ -14,12 +19,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "eevan78",
+      "name": "eevan78",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/27575106?v=4",
+      "profile": "https://github.com/eevan78",
+      "contributions": [
+        "doc"
+      ]
     }
-  ],
-  "contributorsPerLine": 7,
-  "projectName": "terminal-commands",
-  "projectOwner": "miljanuscumlic",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "skipCi": true
+  ]
 }
