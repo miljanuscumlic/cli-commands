@@ -11,18 +11,31 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ac2593d (docs: update README.md [skip ci])
 Useful terminal commands for git and other sofware tools and programs.
 =======
 Useful command-line interface commands for git and other software tools and programs.
 >>>>>>> cab227a (Change the old repository name with the new one: cli-commands)
+=======
+Useful command-line interface commands for git and other software tools and programs. <br /><br />
+This repository's intention is to document both commonly used commands and the ones that may be lesser known but if used could improve programmer's productivity. Our aim is not to cover all the options and switches at all costs, but to provide a good understanding of a commands in a concise way on a single page per a software tool. <br />
+Use your command-line tools like a skillful gymnast. :wink:
+<p align="center">
+  <img src="/logo/cli-commands-logo.png" width="550" title="command-line interface commands">
+</p>
+>>>>>>> 2ff9f11 (Add logo to the README.md)
 
 ## Usage
 
 Point your favorite web browser to this simple and fine [repository](https://github.com/miljanuscumlic/cli-commands) :blush: and browse through its `/commands` directory while you are building the software at your work or for fun, hopefully both at the same time. :wink:
 
+<<<<<<< HEAD
 
 Every file containing terminal commands has a header:
+=======
+Every file containing cli commands has a header:
+>>>>>>> 2ff9f11 (Add logo to the README.md)
 
    | Command | Description | Note | Version | Docs |
    |:--- |:--- |:--- |:--- |:--- |
@@ -32,7 +45,7 @@ In the best case scenario **Version** column should contain the software version
 
 ## How to Contribute
 
-Please read [CONTRIBUTING.md](https://github.com/miljanuscumlic/cli-commands/blob/master/CONTRIBUTING.md) for more details on submitting pull requests to the project.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details on submitting pull requests to the project.
 
 ## Contributors
 
@@ -49,6 +62,7 @@ Useful terminal commands for git
 
 ## Contributors ✨
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -81,9 +95,12 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 =======
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](https://github.com/miljanuscumlic/cli-commands/blob/master/CONTRIBUTORS.md).
 >>>>>>> cab227a (Change the old repository name with the new one: cli-commands)
+=======
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](CONTRIBUTORS.md).
+>>>>>>> 2ff9f11 (Add logo to the README.md)
 
 ## License
 
-This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/cli-commands/blob/master/UNLICENSE) file for details.
+This project is licensed under the Unlicense - see the [UNLICENSE](UNLICENSE) file for details.
 
 >>>>>>> 7daf8af (Change file containing contributors)
