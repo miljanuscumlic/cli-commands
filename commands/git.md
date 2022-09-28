@@ -164,7 +164,7 @@
 | `git stash show <stash_name>` | show statistics of the changes recorded in the stash as a diff with the one commit back when the stash was saved | | 2.20.1 | [link](https://git-scm.com/docs/git-stash#Documentation/git-stash.txt-showltoptionsgtltstashgt) |
 | `git status` | show the working tree status | | 2.20.1 | [link](https://git-scm.com/docs/git-status) |
 | `git status -s` | show the working tree status in the short form | | 2.20.1 | [link](https://git-scm.com/docs/git-status#Documentation/git-status.txt--s) |
-| `git tag` | list all tags | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#_name) |
+| `git tag --sort -v:refname` | list tags sorted in reverse natural order | | 2.37.1 | [link](https://git-scm.com/docs/git-tag#_name) |
 | `git tag -a <tag_name> -m "<message>"` | create new annotated tag with the message on the most recent tag | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--mltmsggt) |
 | `git tag -a <tag_name> -s`| create new annotated tag on the most recent commit and sign it | prior to this command GPG key must be generated and `user.signingkey` variable must be set in the git configuration file | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--s) |
 | `git tag -a <tag_name> <commit_hash>` | create new annotated tag that refer to a given commit hash | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt-ltcommitgt) |
