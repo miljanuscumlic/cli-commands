@@ -33,7 +33,7 @@
 | `awk -F ':' '{print $1}' /etc/passwd` | list all of the users | | 5.0.3 | |
 | `cat /etc/environment` | list system-wide enviroment variables | 5.0.3 | |
 | `cat /etc/group` | list all groups of the users | | 5.0.3 | |
-| `cat /etc/os-release` | display information about the operating system  | | 5.0.3 | |
+| `cat /etc/os-release` | display information about the operating system | | 5.0.3 | |
 | `cat /etc/passwd` | list all users int the format `user_name:encrypetd_pswd:UID:GID:full_name:home_directory:login_shell` | | 5.0.3 | |
 | `cat /proc/meminfo` | information about the RAM memory | | 5.0.3 | |
 | `cd -` | go to the previously visited directory | | 5.0.3 | |
@@ -45,13 +45,13 @@
 | `compgen -v` | list all enviroment variables | | 5.0.3 | |
 | `cp <source> <destionation>` | copy the file | | 5.0.3 | |
 | `declare -p` | list all shell variables | 5.0.3 | |
-| `deluser --remove-home <user_name>` | needs `sudo`; delete user with its home directory | 5.0.3 | |
+| `deluser --remove-home <user_name>` | needs `sudo`; deletes user with its home directory | 5.0.3 | |
 | `df -h` | display disk partition usage in human readable form | | 5.0.3 | |
 | `dmidecode -t 17 ` | hardware specification of the RAM chips | needs `sudo` | 5.0.3 | |
 | `do-release-upgrade` | update Ubuntu | | 5.0.3 | |
 | `dpkg -L <package_name>` | list where application puts its files | | 5.0.3 | |
 | `dpkg-deb -x <package_name>.deb <directory_name>` | unpack the package file | | 5.0.3 | |
-| `du -hs *` | display disk usage of the subdirectories in the current directory  | | 5.0.3 | |
+| `du -hs *` | display disk usage of the files and subdirectories in the current directory | | 5.0.3 | |
 | `echo $(($(getconf _PHYS_PAGES)* $(getconf PAGE_SIZE)/(1024*1024)))` | RAM size | | 5.0.3 | |
 | `echo $<variable_name>` | print shell variable's value | 5.0.3 | |
 | `echo $?` | display return code of the last executed shell command | | 5.0.3 | |
@@ -85,7 +85,7 @@
 | `la -la \| grep "^d" && ls -la \| grep "^-" && ls -la \| grep "^l"` | display all the directories, files and links in that order | | 5.0.3 | |
 | `ldd <file_name>` | display shared library dependencies of the executable file or shared library | | 5.0.3 | |
 | `ln -s <file_path> <symbolic_link_path>` | create symbolic link | needs `sudo` | 5.0.3 | |
-| `ln <file1_name> <file2_name>` | create hard link `file2_name` that points to 'file1_name' | changes in one file are reflected in the other | 5.0.3 | |
+| `ln <file1_name> <file2_name>` | create hard link `file2_name` that points to `file1_name` | changes in one file are reflected in the other | 5.0.3 | |
 | `ls -d1 */` | display list of directories int the current directory | | 5.0.3 | |
 | `ls -ld .??*` | display hidden files in the current directory | | 5.0.3 | |
 | `ls -p \| grep -v /` | display files only in the current directory | | 5.0.3 | |
@@ -101,17 +101,19 @@
 | `printenv` | list all enviroment variables | 5.0.3 | |
 | `printenv <variable_name>` | print variable's value | 5.0.3 | |
 | `printf %s "$(pwd)" \| xclip` | copy current directory path string to X clipboard without a new line at the end | needs xclip to be installed | 5.0.3 | |
-| `ps aux` | show status of every process on the system using BSDD syntax  | | 5.0.3 | |
-| `ps xf` | show status of the processes owned by the current user with the full format listing  | | 5.0.3 | |
+| `ps aux` | show status of every process on the system using BSD syntax | | 5.0.3 | |
+| `ps xf` | show status of the processes owned by the current user with the full format listing | | 5.0.3 | |
 | `pwd` | print current working directory | | 5.0.3. | [link](https://www.gnu.org/software/bash/manual/bash.html#Bourne-Shell-Builtins) |
 | `pwd \| xclip` | copy current directory path string to X clipboard with a new line at the end | needs xclip to be installed | 5.0.3 | |
-| `reboot` | restatt the system | needs `sudo` | 5.0.3 | |
+| `reboot` | restart the system | needs `sudo` | 5.0.3 | |
 | `rm -i <file_path>` | delete a file with prompting before a removal | | 5.0.3 | |
 | `rm -rf ~/.local/share/Trash/*` | empty the trash | | 5.0.3 | |
 | `sed -i '/s/<term1>/<term2>/g' <file_name>` | replace every occurence of the term1 with the term2 inside the given file | | 5.0.3 | |
 | `sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list` | change urls of the old Ubuntu repositories so packages can be updated | needs `sudo` | 5.0.3 | [link](https://askubuntu.com/a/91821) |
 | `set` | print all enviroment variables, shell variables and shell functions | 5.0.3 | |
 | `set -o posix ; set` | list all shell variables | 5.0.3 | |
+| `shutdown` | Schedule shut down event in one minute | needs `sudo` | 5.0.3 | |
+| `shutdown now` | Immediately shut down the system | needs `sudo` | 5.0.3. | |
 | `snap find <string>` | search snap packages | | 5.0.3 | |
 | `snap install <package_name>` | install a snap package | | 5.0.3 | |
 | `snap install <package_name>` | install a snap package | needs `sudo` | 5.0.3 | |
@@ -119,9 +121,11 @@
 | `snap refresh` | update all snap packages | needs `sudo` | 5.0.3 | |
 | `snap remove <package_name>` | uninstall snap package | needs `sudo` | 5.0.3 | |
 | `source <file_name>` | execute shell script | file have to be executable shell file | 5.0.3 | |
-| `su` | switch to the root user | needs `sudo` | 5.0.3 | |
+| `su` | switch to the `root` user | needs `sudo` | 5.0.3 | |
 | `su - <user_name>` | swith the user | 5.0.3 | |
 | `su <user_name>` | switch the user while keeping the environment of the current one | | 5.0.3 | |
+| `sudo -i` | switch to the `root` user | by switching to the `root` user this way, one does not have to know the `root` account password | 5.0.3 | |
+| `sudo -s` | switch to the `root` user while keeping the environment of the current one | | 5.0.3 | |
 | `sudo <command>` | temporaraly grant the administrative rights of the `root` account | needs to be used only on restricted commands | 5.0.3 | | 
 | `systemctl disable <service_name>.service` | disable service from starting on the next boot | needs `sudo` | 5.0.3 | |
 | `systemctl enable <service_name>.service` | enable service to start on the next boot | needs `sudo` | 5.0.3 | |
