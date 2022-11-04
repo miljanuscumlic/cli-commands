@@ -159,3 +159,4 @@
 | `vmstat -s` | dispay info about virtual memory, inerrupts and CPU activity | | 5.0.3 | |
 | `whereis <command>` | display paths of the program | | 5.0.3 | |
 | `which <file_path>` | show executable file's path | | 5.0.3 | |
+| `ls /sys/class/net` | show the names of network interfaces | | 5.0.3. | |
