@@ -149,6 +149,7 @@
 | `tar xjf <file_name>` | decompress a `tar.bz2` archive file | | 5.0.3 | |
 | `tar xzf <file_name>` | decompress a `tar.gz` archive file | | 5.0.3 | |
 | `test -f <file_name> && echo 'Exist' \|\| echo 'Doesn't exist'` | test whether a file exists | blank spaces around square brackets are mandatory | 5.0.3 | |
+| `time <bash_command>` | show time needed for the execution of the given bash command | | 5.0.3 | |
 | `touch <file_name>` | create empty file with the given name | | 5.0.3 | |
 | `uname -a` | Linux kernel version with some more system information | | 5.0.3 | |
 | `uname -r` | Linux kernel version | | 5.0.3 | |
