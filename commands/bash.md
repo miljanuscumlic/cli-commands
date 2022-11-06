@@ -89,6 +89,7 @@
 | `ls -d1 */` | display list of directories int the current directory | | 5.0.3 | |
 | `ls -ld .??*` | display hidden files in the current directory | | 5.0.3 | |
 | `ls -p \| grep -v /` | display files only in the current directory | | 5.0.3 | |
+| `ls /sys/class/net` | show the names of network interfaces | | 5.0.3. | |
 | `ls \| grep -v "<file_name>" \| xargs rm` | delete all files from the current directory except the given file | fails if the filename contains a space character | 5.0.3 | |
 | `lsb_release -a` | show information about Linux installation | | 5.0.3 | 
 | `lsblk` | list all disk and disk partitions | | 5.0.3 | |
@@ -96,8 +97,10 @@
 | `lscpu` | display information about the CPU architecture | | 5.0.3 | |
 | `lshw` | show system information | needs `sudo` | 5.0.3 | |
 | `lshw -c <class_name>` | show information about the hardware class | needs `sudo` | 5.0.3 | |
+| `mount` | show all mounted volumes | | 5.0.3 | |
 | `mv <file1_name> <file2_name> <destination_directory>` | move multiple files at once to the destination directory | | 5.0.3 | 
 | `mv <file1_path> <file2_path>` | move and/or rename a file | | 5.0.3 | |
+| `netstat -tulpn` | list all open ports; when used with `sudo` it displays programs listening on those ports | | 5.0.3 | |
 | `printenv` | list all enviroment variables | 5.0.3 | |
 | `printenv <variable_name>` | print variable's value | 5.0.3 | |
 | `printf %s "$(pwd)" \| xclip` | copy current directory path string to X clipboard without a new line at the end | needs xclip to be installed | 5.0.3 | |
@@ -159,4 +162,3 @@
 | `vmstat -s` | dispay info about virtual memory, inerrupts and CPU activity | | 5.0.3 | |
 | `whereis <command>` | display paths of the program | | 5.0.3 | |
 | `which <file_path>` | show executable file's path | | 5.0.3 | |
-| `ls /sys/class/net` | show the names of network interfaces | | 5.0.3. | |
