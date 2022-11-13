@@ -169,3 +169,4 @@
 | `vmstat -s` | display info about virtual memory, interrupts and CPU activity | | 5.0.3 | |
 | `whereis <command>` | display paths of the program | | 5.0.3 | |
 | `which <file_path>` | show executable file's path | | 5.0.3 | |
+| `xkill` | kill chosen program by mouse click | useful when program is not responding; after entering command, the `x` mouse pointer is shown with which one chooses program to close | 5.0.3 | |
