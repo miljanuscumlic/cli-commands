@@ -1,5 +1,7 @@
 | Command | Description | Note | Version | Docs |
 |:--- |:--- |:--- |:--- |:--- |
+| `!!` | repeat the last entered bash command | | 5.0.3 | |
+| `!$` | repeat the last argument from the last bash  command | | 5.0.3 | |
 | `&><file_name>` | redirect stdout and stderr to the given file by overriding it's previous content | | 5.0.3 | |
 | `&>><file_name>` | redirect stdout and stderr to the given file by appending to the file's end | | 5.0.3 | |
 | `1><file_name>` | redirect stdout to the given file by overriding it's previous content | | 5.0.3 | |
@@ -21,6 +23,7 @@
 | `apt policy` | list all available package repositories on the system | | 5.0.3 | |
 | `apt policy <package_name>` | show the package version and repository from where it was installed | | 5.0.3 | |
 | `apt purge <package_name>` | remove package and its configuration files | needs `sudo` | 5.0.3 | |
+| `apt show <package_name> -a` | show information about all available versions of the package in the repository | | 5.0.3 | |
 | `apt update` | update packages definitions | needs `sudo` | 5.0.3 | |
 | `apt upgrade` | upgrade the system by installing/upgrading packages | needs `sudo` | 5.0.3 | |
 | `apt-cache depends <package_name>` | show package dependencies | | 5.0.3 | |
@@ -31,7 +34,6 @@
 | `apt-get install ./<package_name>` | install the deb package | needs `sudo` | 5.0.3 | |
 | `apt-mark auto <package_name>` | mark package as automatically installed | package is marked as manually  installed when it was installed with `apt install <package_name>` | 5.0.3 | |
 | `apt-mark showmanual` | list all of the manually installed packages from distribution packages | | 5.0.3 | |
-| `apt show <package_name> -a` | show information about all available versions of the package in the repository | | 5.0.3 | |
 | `awk -F ':' '{print $1}' /etc/passwd` | list all of the users | | 5.0.3 | |
 | `cat /etc/environment` | list system-wide environment variables | | 5.0.3 | |
 | `cat /etc/group` | list all groups of the users | | 5.0.3 | |
@@ -116,7 +118,9 @@
 | `sed -i '/s/<term1>/<term2>/g' <file_name>` | replace every occurence of the term1 with the term2 inside the given file | | 5.0.3 | |
 | `sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list` | change urls of the old Ubuntu repositories so packages can be updated | needs `sudo` | 5.0.3 | [link](https://askubuntu.com/a/91821) |
 | `set` | print all environment variables, shell variables and shell functions | | 5.0.3 | |
+| `set -o emacs` | use emacs key shortcuts | this is the default bash behavior | 5.0.3 | | 
 | `set -o posix ; set` | list all shell variables | | 5.0.3 | |
+| `set -o vi` | use vim key shortcuts | | 5.0.3 | |
 | `shutdown` | Schedule shut down event in one minute | needs `sudo` | 5.0.3 | |
 | `shutdown now` | Immediately shut down the system | needs `sudo` | 5.0.3 | |
 | `snap find <string>` | search snap packages | | 5.0.3 | |
