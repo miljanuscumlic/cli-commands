@@ -70,6 +70,7 @@
 | `getconf -a` | list all configuration variables with their values | | 5.0.3 | |
 | `getent group` | list all groups of users | | 5.0.3 | |
 | `getent group <group_name>` | list all users of the given group | | 5.0.3 | |
+| `grep ^[^#] /etc/apt/sources.list /etc/apt/sources.list.d` | list all package repositories on the system | | 5.0.3 | |
 | `groupadd <group_name>` | create new group of users | needs `sudo` | 5.0.3 | |
 | `groupdel <group_name>` | delete a group of users | needs `sudo` | 5.0.3 | |
 | `groupmod --new-name <new_group_name> <old_group_name>` | rename a group of users | needs `sudo` | 5.0.3 | |
