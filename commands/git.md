@@ -10,6 +10,7 @@
 | `git branch` | list the local branches | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#_description) |
 | `git branch --merged` | list all local branches being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---mergedltcommitgt) |
 | `git branch --no-merged` | list all local branches not being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---no-mergedltcommitgt) |
+| ``git branch -D `git branch --list <pattern>` `` | delete all the branches which name matches given pattern | | 2.20.1 | |
 | `git branch -a` | list all local and remote branches | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--a) |
 | `git branch -a --no-merged <branch_name>` | list all local and remote branches not being merged into the branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---no-mergedltcommitgt) |
 | `git branch -d <branch_name>` | delete the local branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d) |
