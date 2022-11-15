@@ -1,5 +1,6 @@
 | Command | Description | Note | Version | Docs |
 |:--- |:--- |:--- |:--- |:--- |
+| ``git branch -D `git branch --list <pattern>` `` | delete all the branches which name matches given pattern | | 2.20.1 | |
 | `git add -A` | add, remove and modify index entries to match the state of the working tree | stages all changes | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--A) |
 | `git add -N <file_path>` | track given file and add it to the index without its content | | 2.20.1 | [link](https://www.git-scm.com/docs/git-add#Documentation/git-add.txt--N) |
 | `git add -u` | remove and modify index entries to match the state of deleted and modified files in the working tree | stages modifications and deletions, but not new files | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--u) |
@@ -72,6 +73,7 @@
 | `git log --grep=<pattern>` | show commits which messages match specified regular expression pattern | | 2.20.1 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt---grepltpatterngt) |
 | `git log --left-right <first_branch_name>..<second_branch_name>` | list of all commits contained in the first branch and not in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---left-right) |
 | `git log --oneline` | show concise one line information about the commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---oneline) |
+| `git log --oneline --graph <branch_name1> <branch_name2>` | decoratively show the union of all the commits of the given branches | | 2.37.2 | [link](https://www.git-scm.com/docs/git-log#_description) | 
 | `git log --pretty=format:"%h %s" --graph` | show hash and subject of all commits and connect them in a graph | | 2.20.1 | [link](https://git-scm.com/docs/git-log#_pretty_formats) |
 | `git log --stat -<number>` | show log headers and statistics of the most recent given number of commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---statltwidthgtltname-widthgtltcountgt) |
 | `git log -<number>` | show given number of a most recent commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt--ltnumbergt) |
@@ -176,4 +178,3 @@
 | `git verify-commit <commit_hash>` | validate GPG signature of a given commit | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-commit) |
 | `git verify-tag <tag_name>` | validate GPG signature of a given tag | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-tag) |
 | `git version` | get the version of the installed git | | 2.20.1 | |
-| ``git branch -D `git branch --list <pattern>` `` | delete all the branches which name matches given pattern | | 2.20.1 | |
