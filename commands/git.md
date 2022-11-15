@@ -4,13 +4,13 @@
 | `git add -N <file_path>` | track given file and add it to the index without its content | | 2.20.1 | [link](https://www.git-scm.com/docs/git-add#Documentation/git-add.txt--N) |
 | `git add -u` | remove and modify index entries to match the state of deleted and modified files in the working tree | stages modifications and deletions, but not new files | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--u) |
 | `git add .` | add and modify index entries to match the state of the new and modified files in the working tree | stages new files and modifications, but not deletions | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203) |
+| `git add . ':!<file_path>'` | add all files to the index accept the given one | | 2.37.1 | |
 | `git add <file_path>` | add, remove or modify index entry of the specified file to match its state in the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203) |
 | `git blame <file_path>` | annotate each line of a given file with information like hash, author name, timestamp of the most recent revision, and display all annotated lines | | 2.20.1 | [link](https://www.git-scm.com/docs/git-blame#_description) |
 | `git blame <file_path> -L <start>,<end>`| annotate given line range with revision information like hash, author name, timestamp of the most recent revision of a given file, and display all annotated lines | | 2.20.1 | [link](https://www.git-scm.com/docs/git-blame#Documentation/git-blame.txt--Lltstartgtltendgt) |
 | `git branch` | list the local branches | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#_description) |
 | `git branch --merged` | list all local branches being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---mergedltcommitgt) |
 | `git branch --no-merged` | list all local branches not being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---no-mergedltcommitgt) |
-| ``git branch -D `git branch --list <pattern>` `` | delete all the branches which name matches given pattern | | 2.20.1 | |
 | `git branch -a` | list all local and remote branches | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--a) |
 | `git branch -a --no-merged <branch_name>` | list all local and remote branches not being merged into the branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---no-mergedltcommitgt) |
 | `git branch -d <branch_name>` | delete the local branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d) |
@@ -176,3 +176,4 @@
 | `git verify-commit <commit_hash>` | validate GPG signature of a given commit | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-commit) |
 | `git verify-tag <tag_name>` | validate GPG signature of a given tag | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-tag) |
 | `git version` | get the version of the installed git | | 2.20.1 | |
+| ``git branch -D `git branch --list <pattern>` `` | delete all the branches which name matches given pattern | | 2.20.1 | |
