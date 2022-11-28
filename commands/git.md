@@ -152,6 +152,7 @@
 >>>>>>> f3e6e87 ([git] Add commands shortlog and show)
 | `git stash` | stash all staged and unstaged changes | same as `git stash push` | 2.20.1 | [link](https://git-scm.com/docs/git-stash#_description) |
 | `git stash --all` | stage all staged, unstaged changes including untracked and ignored files | | 2.20.1 | [link](https://git-scm.com/docs/git-stash#Documentation/git-stash.txt-push-p--patch-k--no-keep-index-u--include-untracked-a--all-q--quiet-m--messageltmessagegt--ltpathspecgt82308203) |
+| `git stash -S` | stage only staged files | | 2.37.1 | [link](https://www.git-scm.com/docs/git-stash#Documentation/git-stash.txt--S) |:
 | `git stash -u` | stash all staged, unstaged and untracked changes | does not include ignored files | 2.20.1 | [link](https://git-scm.com/docs/git-stash#Documentation/git-stash.txt-push-p--patch-k--no-keep-index-u--include-untracked-a--all-q--quiet-m--messageltmessagegt--ltpathspecgt82308203) |
 | `git stash apply` | apply the latest stash entry on the on top of the working tree state; entry remains on the stash | | 2.20.1 | [link](https://git-scm.com/docs/git-stash#Documentation/git-stash.txt-apply--index-q--quietltstashgt) |
 | `git stash apply --index` | apply the latest stash entry on top of the working tree state trying to keep indexed state of the changes from the entry; entry remains on the stash | fails to instantiate index state if there are conflicts | 2.20.1 | [link](https://git-scm.com/docs/git-stash#Documentation/git-stash.txt-apply--index-q--quietltstashgt) |
