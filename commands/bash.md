@@ -48,6 +48,7 @@
 | `compgen -g` | list all the groups of the users | | | |
 | `compgen -v` | list all environment variables | | | |
 | `cp <source> <destination>` | copy the file | | | |
+| `date -d "<date_string> +<time>"` | calculate resulting date by adding specified time to a date | i.e. `date -d "18:48:00 2022-12-12 +1 hour 38 minutes"` gives us `20:26:00 2022-12-12` with default date formatting | | | 
 | `declare -p` | list all shell variables | | | |
 | `deluser --remove-home <user_name>` | needs `sudo`| deletes user with its home directory | | |
 | `df -h` | display disk partition usage in human readable form | | | |
