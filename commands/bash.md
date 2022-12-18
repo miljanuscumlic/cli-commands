@@ -67,6 +67,7 @@
 | `find . ! -name "<file_name>" -type f -delete` | delete all files from the current directory except the given file | | | |
 | `find . -name <pattern> -delete` | delete all files which name matches a given pattern | | | |
 | `find / -iname <pattern>` | list all files on the system which name matches the regular expression in a given pattern | search is case insensitive | | |
+| `for i in <directory_path>; do <command> "$i"; done | execute command on all files in a directory` | | | |
 | `free -m` | display information about total, used and free RAM in MB | | | |
 | `getconf -a` | list all configuration variables with their values | | | |
 | `getent group` | list all groups of users | | | |
