@@ -40,6 +40,7 @@
 | `cat /etc/os-release` | display information about the operating system | | | |
 | `cat /etc/passwd` | list all users with some additional information | | | |
 | `cat /proc/meminfo` | information about the RAM memory | | | |
+| `cat /proc/version_signature` | display distribution kernel-release and the manline kernel-version numbers | | | |
 | `cd -` | go to the previously visited directory | | | |
 | `chgrp group <file_name>` | change group ownership of the given file | | | |
 | `chmod [ugoa][+-=][rwxXst] <file_name>` | change file permissions of the given file | | | |
@@ -160,8 +161,8 @@
 | `test -f <file_name> && echo 'Exist' \|\| echo 'Doesn't exist'` | test whether a file exists | blank spaces around square brackets are mandatory | | |
 | `time <bash_command>` | show time needed for the execution of the given bash command | | | |
 | `touch <file_name>` | create empty file with the given name | | | |
-| `uname -a` | Linux kernel version with some more system information | | | |
-| `uname -r` | Linux kernel version | | | |
+| `uname -a` | show distribution's Linux kernel version with some more system information | | | |
+| `uname -r` | show distribution's Linux kernel version | | | |
 | `unset <variable_name>` | delete environment variable | | | |
 | `update-alternatives --config <command>` | choose alternative program to be run by the command | needs `sudo` | | |
 | `update-alternatives --install <link> <command> <path> <priority>` | install alternative program designated by the `<path>` to be run by the executable designated by `<link>` giving it a priority rank among all the alternatives | needs `sudo` | | |
