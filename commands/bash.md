@@ -32,7 +32,7 @@
 | `apt-cache search <term>` | search of packages | | | |
 | `apt-get install --reinstall <package_name>` | reinstall the package | needs `sudo` | | |
 | `apt-get install ./<package_name>` | install the deb package | needs `sudo` | | |
-| `apt-mark auto <package_name>` | mark package as automatically installed | package is marked as manually installed when it was installed with `apt install <package_name>` | | |
+| `apt-mark auto <package_name>` | mark package as automatically installed | needs `sudo`; package is marked as manually installed when it was installed with `apt install <package_name>` | | |
 | `apt-mark showmanual` | list all of the manually installed packages from distribution packages | | | |
 | `awk -F ':' '{print $1}' /etc/passwd` | list all of the users | | | |
 | `cat /etc/environment` | list system-wide environment variables | | | |
