@@ -57,7 +57,8 @@
 | `do-release-upgrade` | update Ubuntu | | | |
 | `dpkg -L <package_name>` | list where application puts its files | | | |
 | `dpkg-deb -x <package_name>.deb <directory_name>` | unpack the package file | | | |
-| `du -hs *` | display disk usage of the files and subdirectories in the current directory | | | |
+| `du -hs <directory>` | display disk usage of the directory | `sudo` should be  used when current user does not have access permissions for the directory | | |
+| `du -hs *` | display disk usage of the files and subdirectories in the current directory | `sudo` should be  used when current user does not have access permissions for some directory | | |
 | `echo $(($(getconf _PHYS_PAGES)* $(getconf PAGE_SIZE)/(1024*1024)))` | RAM size | | | |
 | `echo $<variable_name>` | print shell variable's value | | | |
 | `echo $?` | display return code of the last executed shell command | | | |
@@ -68,7 +69,7 @@
 | `find . ! -name "<file_name>" -type f -delete` | delete all files from the current directory except the given file | | | |
 | `find . -name <pattern> -delete` | delete all files which name matches a given pattern | | | |
 | `find / -iname <pattern>` | list all files on the system which name matches the regular expression in a given pattern | search is case insensitive | | |
-| `for i in <directory_path>; do <command> "$i"; done | execute command on all files in a directory` | | | |
+| `for i in <directory_path>; do <command> "$i"; done` | execute command on all files in a directory | | | |
 | `free -m` | display information about total, used and free RAM in MB | | | |
 | `getconf -a` | list all configuration variables with their values | | | |
 | `getent group` | list all groups of users | | | |
