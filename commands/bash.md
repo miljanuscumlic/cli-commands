@@ -14,7 +14,9 @@
 | `[ -d /<directory_name> ] && echo 'Exist' \|\| echo 'Doesn't exist'` | test whether a directory exists | blank spaces around square brackets are mandatory | | |
 | `[ -f <file_name> ] && echo 'Exist' \|\| echo 'Doesn't exist'` | test whether a file exists | blank spaces around square brackets are mandatory | | |
 | `adduser <user_name>` | create a user | needs `sudo` | | |
+| `apt autoclean` | delete all cached deb packages on a disk that are not available anymore on the repository | needs `sudo` | | |
 | `apt autoremove` | remove all unused packages | needs `sudo` | | |
+| `apt clean` | delete all cached deb packages on a disk | needs `sudo` | | |
 | `apt dist-upgrade` | upgrade packages by handling changes in the package dependencies | | | |
 | `apt install -f` | install missing dependencies | needs `sudo` | | |
 | `apt install <package_name>` | install package | needs `sudo` | | |
