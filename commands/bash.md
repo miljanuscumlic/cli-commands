@@ -57,6 +57,7 @@
 | `df -h` | display disk partition usage in human readable form | | | |
 | `dmidecode -t 17 ` | hardware specification of the RAM chips | needs `sudo` | | |
 | `do-release-upgrade` | update Ubuntu | | | |
+| `dpkg --info <package_name> | grep Version` | retrieve deb package version number | | |
 | `dpkg -L <package_name>` | list where application puts its files | | | |
 | `dpkg-deb -x <package_name>.deb <directory_name>` | unpack the package file | | | |
 | `du -hs <directory>` | display disk usage of the directory | `sudo` should be  used when current user does not have access permissions for the directory | | |
