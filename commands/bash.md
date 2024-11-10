@@ -56,8 +56,9 @@
 | `deluser --remove-home <user_name>` | needs `sudo`| deletes user with its home directory | | |
 | `df -h` | display disk partition usage in human readable form | | | |
 | `dmidecode -t 17 ` | hardware specification of the RAM chips | needs `sudo` | | |
-| `do-release-upgrade` | update Ubuntu | | | |
-| `dpkg --info <package_name> | grep Version` | retrieve deb package version number | | |
+| `do-release-upgrade` | update Ubuntu | needs `sudo`; set a proper value for the `Prompt` property in /etc/update-manager/release-upgrades. | | |
+| `do-release-upgrade -c` | check for a new Ubuntu release | set a proper value for  the `Prompt` property in /etc/update-manager/release-upgrades. | | |
+| `dpkg --info <package_name> \| grep Version` | retrieve deb package version number | | |
 | `dpkg -L <package_name>` | list where application puts its files | | | |
 | `dpkg-deb -x <package_name>.deb <directory_name>` | unpack the package file | | | |
 | `du -hs <directory>` | display disk usage of the directory | `sudo` should be  used when current user does not have access permissions for the directory | | |
