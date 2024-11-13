@@ -26,10 +26,6 @@ In the best case scenario **Version** column should contain the software version
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details on submitting pull requests to the project.
 
-## License
-
-This project is licensed under the Unlicense - see the [UNLICENSE](https://github.com/miljanuscumlic/terminal-commands/blob/git/UNLICENSE) file for details.
-
 ## Contributors ✨
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification and is brought to you by these awesome [contributors](CONTRIBUTORS.md).
