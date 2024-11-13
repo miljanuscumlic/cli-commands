@@ -2,7 +2,7 @@
 
 1. Fork the repository.
 2. Clone forked repository and create a new branch.
-3. Decide which single file would you like to contribute to, and make a new branch. E.g. if you want to make a contribution to the `bash.md` make a branch from the `bash` branch of this repository.
+3. Decide which command of which tool would you like to document, and make a new branch from the `develop`.
 4. Every file containing terminal commands has a header:
 
    | Command | Description | Note | Version | Docs |
@@ -21,7 +21,7 @@
 6. Commit messages should be succinct, but while writing them follow these rules as much as possible: [The seven rules of the great Git commit message](https://chris.beams.io/posts/git-commit/#seven-rules)
 7. Prepend a subject of a commit message with appropriate mark e.g. when contributing to the `git-commands.md` prepend it with `[git]`: `git commit -m "[git] Add salute to live long and prosper"`.
 8. Put further clarifications of a commit changes inside a commit message description, if you feel it's necessary.
-9. Submit a Pull Request with description of changes to the appropriate branch. E.g. if you made a branch from the `bash` branch, submit a Pull Request to the `bash` branch of the repository.
+9. Submit a Pull Request with description of changes to the `develop` branch.
 10. We encourage you to add yourself to the list of all our contributors by commenting your pull request with: `@all-contributors please add @<github_username> for <contributions>`.<br />
    The most appropriate value for `<contributions>` is `doc` because we are documenting the usage of commands. Full documentation on all-contributors bot which we are using for this purpose can be found [here](https://allcontributors.org/docs/en/bot/usage).
 
