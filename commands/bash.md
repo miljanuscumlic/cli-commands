@@ -61,8 +61,8 @@
 | `dpkg --info <package_name> \| grep Version` | retrieve deb package version number | | |
 | `dpkg -L <package_name>` | list where application puts its files | | | |
 | `dpkg-deb -x <package_name>.deb <directory_name>` | unpack the package file | | | |
-| `du -hs <directory>` | display disk usage of the directory | `sudo` should be  used when current user does not have access permissions for the directory | | |
 | `du -hs *` | display disk usage of the files and subdirectories in the current directory | `sudo` should be  used when current user does not have access permissions for some directory | | |
+| `du -hs <directory>` | display disk usage of the directory | `sudo` should be  used when current user does not have access permissions for the directory | | |
 | `echo $(($(getconf _PHYS_PAGES)* $(getconf PAGE_SIZE)/(1024*1024)))` | RAM size | | | |
 | `echo $<variable_name>` | print shell variable's value | | | |
 | `echo $?` | display return code of the last executed shell command | | | |
@@ -111,6 +111,7 @@
 | `lscpu` | display information about the CPU architecture | | | |
 | `lshw` | show system information | needs `sudo` | | |
 | `lshw -c <class_name>` | show information about the hardware class | needs `sudo` | | |
+| `mkdir <directory_name> && cd $_` | create directory and enter into it immediately | $_ is the last argument given to the previous command | | |
 | `mount` | show all mounted volumes | | | |
 | `mv <file1_name> <file2_name> <destination_directory>` | move multiple files at once to the destination directory | | | 
 | `mv <file1_path> <file2_path>` | move and/or rename a file | | | |
