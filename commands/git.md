@@ -39,6 +39,7 @@
 | `git checkout @{-1}` | check out previously checked out branch | | 2.21.0 | |
 | `git cherry-pick <commit_hash>` | apply the changes given commit introduces to the current branch by recording a new commit to it | working tree must be clean | 2.20.1 | [link](https://git-scm.com/docs/git-cherry-pick#_description) |
 | `git clean -df` | clean the working tree by removing all untracked files and directories | | 2.20.1 | [link](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--d) |
+| `git clean -i` | remove untracked files inside an interactive mode | | 2.0.5 | [link](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt---interactive) |
 | `git clone <repository_url> <directory_path>` | clone git repository into a specified local directory | when `.` is specified as a local directory, repository will be cloned in the current one | 2.20.1 | [link](https://www.git-scm.com/docs/git-clone)
 | `git commit` | open default editor for writing the commit message and commit staged changes to the local repository | useful for writing multiline message description | 2.20.1 | [link](https://git-scm.com/docs/git-commit#_description) |
 | `git commit --amend` | replace the most recent commit with the new one by including all that is in the index and launch default editor to optionally amend commit message | | 2.20.1 | [link](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---amend) |
