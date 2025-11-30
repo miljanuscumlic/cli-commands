@@ -129,8 +129,10 @@
 | `git remote rm <remote_name>` | delete remote repository | | 2.20.1 | [link](https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-emrmem) |
 | `git remote set-url <remote_name> <remote_url>` | set remote URL for a remote repository | `<remote_url>` can be an ssh or https URL | 2.20.1 | [link](https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-emset-urlem) |
 | `git remote show <remote_name>` | show information about remote repository (remote's name, URL's, remote branches, local branches set to track remote ones...) | | 2.20.1 | [link](https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-emshowem) |
+| `git reset --hard <branch_name>@{n}` | reset a branch to the nth prior position of the branch pointer | | 2.48.1 |
 | `git reset --hard <commit_hash>` | uncommit + unstage + delete changes, nothing left, state set to the one of the given commit | | 2.20.1 | [link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard) |
 | `git reset --hard <repository>/<branch_name>` | uncommit + unstage + delete changes, nothing left, state set to the state of the remote-tracking branch | | 2.20.1 | [link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---hard) |
+| `git reset --hard ORIG_HEAD` | reset branch after rebase to the previous state (before the rebase) | | 2.0.5 |[link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt-Undoamergeorpullinsideadirtyworkingtree) |
 | `git reset --mixed <commit_hash>` | uncommit + unstage changes, all changes made after the given commit are left in the working tree | | 2.20.1 | [link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---mixed) |
 | `git reset --soft <commit_hash>` | uncommit changes, all changes after the given commit are left staged | | 2.20.1 | [link](https://git-scm.com/docs/git-reset#Documentation/git-reset.txt---soft) |
 | `git reset HEAD <file_path>` | unstage the file, changes are left in the working tree | mixed reset of a file | 2.20.1 | [link](https://git-scm.com/docs/git-reset#_description) |
