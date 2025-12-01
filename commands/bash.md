@@ -79,6 +79,8 @@
 | `getconf -a` | list all configuration variables with their values | | | |
 | `getent group` | list all groups of users | | | |
 | `getent group <group_name>` | list all users of the given group | | | |
+| `grep -ril <text> <directory_path>` | recursively search for every file containing text; display only filepaths not their content | | | | 
+| `grep -rn <directory_path> -e <text_pattern>` | recursively search for every file containing text; display line number and line containing text pattern | | | |
 | `grep ^[^#] /etc/apt/sources.list /etc/apt/sources.list.d` | list all package repositories on the system | | | |
 | `groupadd <group_name>` | create new group of users | needs `sudo` | | |
 | `groupdel <group_name>` | delete a group of users | needs `sudo` | | |
