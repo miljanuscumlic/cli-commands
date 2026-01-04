@@ -1,6 +1,5 @@
 | Command | Description | Note | Version | Docs |
 |:--- |:--- |:--- |:--- |:--- |
-| ``git branch -D `git branch --list <pattern>` `` | delete all the branches which name matches given pattern | | 2.20.1 | |
 | `git add -A` | add, remove and modify index entries to match the state of the working tree | stages all changes | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--A) |
 | `git add -N <file_path>` | track given file and add it to the index without its content | | 2.20.1 | [link](https://www.git-scm.com/docs/git-add#Documentation/git-add.txt--N) |
 | `git add -u` | remove and modify index entries to match the state of deleted and modified files in the working tree | stages modifications and deletions, but not new files | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--u) |
@@ -12,6 +11,7 @@
 | `git branch` | list the local branches | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#_description) |
 | `git branch --merged` | list all local branches being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---mergedltcommitgt) |
 | `git branch --no-merged` | list all local branches not being merged into the current branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---no-mergedltcommitgt) |
+| `git branch -D $(git branch --list <pattern>)` | delete all the branches which name matches given pattern | | 2.20.1 | |
 | `git branch -a` | list all local and remote branches | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--a) |
 | `git branch -a --no-merged <branch_name>` | list all local and remote branches not being merged into the branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt---no-mergedltcommitgt) |
 | `git branch -d <branch_name>` | delete the local branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--d) |
