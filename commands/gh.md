@@ -8,7 +8,8 @@
 | `gh pr create` | create pull request in interactive mode | command can also work non-interactively using flags | 0.9 | [link](https://cli.github.com/manual/gh_pr_create) |
 | `gh pr diff` | look at the diff made with the pull request | | 0.9 | [link](https://cli.github.com/manual/gh_pr_diff) |
 | `gh pr edit <pull_request_number>` | edit pull request in interactive mode | | 2.83.2 | [link](https://cli.github.com/manual/gh_pr_edit) |
-| `gh pr merge` | interactively merge pull requestassociated with the current branch | | 0.9 | [link](https://cli.github.com/manual/gh_pr_merge) |
+| `gh pr list` | list all the pull request in the repository | by default it only lists open pull requests | | 0.9 | [link](https://cli.github.com/manual/gh_pr_list) | 
+| `gh pr merge` | interactively merge pull request associated with the current branch | | 0.9 | [link](https://cli.github.com/manual/gh_pr_merge) |
 | `gh pr status` | display information about pull requests of the current users or on the current branch | | 0.9 | [link](https://cli.github.com/manual/gh_pr_status) | 
 | `gh repo set-default` | set default repo in interactive mode | | 0.9 | [link](https://cli.github.com/manual/gh_repo_set-default) |
 | `gh repo view -b <branch_name>` | display repository descriptionand README version of a given branch  | | 0.9 | [link](https://cli.github.com/manual/gh_repo_view) |
