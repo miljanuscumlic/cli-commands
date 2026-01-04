@@ -176,4 +176,8 @@
 | `git update-git-for-windows -y`| update git on Windows OS | | 2.25.1 | |
 | `git verify-commit <commit_hash>` | validate GPG signature of a given commit | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-commit) |
 | `git verify-tag <tag_name>` | validate GPG signature of a given tag | | 2.20.1 | [link](https://git-scm.com/docs/git-verify-tag) |
-| `git version` | get the version of the installed git | | 2.20.1 | |
+| `git version` | get the version of the installed git | | 2.33.1 | [link](https://git-scm.com/docs/git-version) |
+| `git worktree add <path> <branch_name>` | add new working tree of the current repository on the specified path | | 2.5.6 | [link](https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-addpathcommit-ish) |
+| `git worktree list` | list all locally created worktrees of the repository | | 2.7.6 | [link]( https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-list) |
+| `git worktree prune` | delete working tree information | usefull to use after working tree is deleted by OS command | 2.5.6 | [link](https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-prune) |
+| `git worktree remove <worktree>` | remove working tree by deleting working tree from the disk | only clean working tree can be removed | 2.39.0 | [link](https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-remove) |
