@@ -14,4 +14,4 @@
 | `:set number` | display line numbers | alias command is `:set nu` | 5.1.4 | |
 | `:term` | open terminal window | 5.1.4 | |
 | `?<search_term>` | find the term going backward | type `n` for the next find and `b` for the previous one | 5.1.4 | |
-| `:<range>!<ext_filter> <filter_args>` | filters a range of lines through an external program | without the `<range>`, only the current line is filtered, range will automaticaly become `'<,'>` for visual selection | 5.1.4 | |
+| `:<range>!<ext_filter> <filter_args>` | filter a range of lines through an external program | without the `<range>`, only the current line is filtered, range will automaticaly become `'<,'>` for visual selection | 5.1.4 | |
