@@ -67,6 +67,7 @@
 | `git fetch <remote_name>` | fetch data of all the remote branches of a given remote repository, updating remote-tracking branches | does not change the copies of the local branches | 2.20.1 | [link](https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt-ltrepositorygt) |
 | `git fetch <remote_name> <branch_name>` | fetch data of a given remote branch only, updating remote-tracking branch | does not change the copy of a local branch | 2.20.1 | [link](https://git-scm.com/docs/git-fetch#_description) |
 | `git fetch <remote_name> <remote_branch_name>:<local_branch_name>` | fetch and pull! data from the remote branch to the given local branch other than the currently checked out local branch | does not touch the index and working tree | 2.20.1 | [link](https://git-scm.com/docs/git-fetch#Documentation/git-fetch.txt-ltrefspecgt) |
+| `git fsck --unreachable` | display all unreachable git objects from any of the references in refs/ directory | | 2.0.5 | [link](https://git-scm.com/docs/git-fsck#Documentation/git-fsck.txt---unreachable) |
 | `git init` | create an empty git repository or reinitialize the existing one | | 2.20.1 | [link](https://git-scm.com/docs/git-init#_name) |
 | `git log -- <file_path>` | show commits in which the file was committed and changed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt-ltpathsgt) |
 | `git log --author="<author_name>" -- <directory_name>/ ` | show commits of the given author of the changed files that belong to specified directory | `<author_name>` can be a sub-string of the actual author name | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---authorltpatterngt) |
@@ -97,6 +98,7 @@
 | `git merge-base <first_branch_name> <second_branch_name>` | find the most recent common ancestor of the given branches | | 2.20.1 | [link](https://git-scm.com/docs/git-merge-base) |
 | `git mergetool` | run previously set merge tool for a conflict resolution | invoked during merge or rebase | 2.20.1 | [link](https://git-scm.com/docs/git-mergetool#_name) |
 | `git mv <old_file_name> <new_file_name>` | rename or move the file | | 2.20.1 | [link](https://git-scm.com/docs/git-mv#_description) |
+| `git prune` | delete unreachable object created by git | frees up disk space by deleting all unpacked objects; recommendation is to call `git gc` instead | 2.0.5 | [link](https://git-scm.com/docs/git-prune) |
 | `git pull` | get the changes from the remote repository and incorporate them in the current local branch | remote repository and the name of the upstream remote branch must be set in git configuration file | 2.20.1 | [link](https://git-scm.com/docs/git-pull#_name) | 
 | `git pull --all` | get the changes from all remote repositories and merge the current local branch with its respective remote branch | | 2.20.1 | [link](https://www.git-scm.com/docs/git-pull#Documentation/git-pull.txt---all) |
 | `git pull -f` | get the changes from the remote repository and merge them into a local branch regardless it is a fast-forward merge or not | | 2.0.5 | [link](https://git-scm.com/docs/git-pull#Documentation/git-pull.txt--f) |
