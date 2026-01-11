@@ -40,6 +40,7 @@
 | `git checkout <tag_name>` | check out the state of the working tree of the given tag | moves user to the `detached HEAD` state | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#_description) |
 | `git checkout @{-1}` | check out previously checked out branch | | 2.21.0 | |
 | `git cherry-pick <commit_hash>` | apply the changes given commit introduces to the current branch by recording a new commit to it | working tree must be clean | 2.20.1 | [link](https://git-scm.com/docs/git-cherry-pick#_description) |
+| `git cherry-pick <first_commit_hash>^..<second_commit_hash>` | cherry pick range of commits including the first one | first commit is older; remove the carret sign to exclude the first one from picking | 2.50.0 | [link](https://git-scm.com/docs/git-cherry-pick) |
 | `git clean -df` | clean the working tree by removing all untracked files and directories | | 2.20.1 | [link](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt--d) |
 | `git clean -i` | remove untracked files inside an interactive mode | | 2.0.5 | [link](https://git-scm.com/docs/git-clean#Documentation/git-clean.txt---interactive) |
 | `git clone <repository_url> <directory_path>` | clone git repository into a specified local directory | when `.` is specified as a local directory, repository will be cloned in the current one | 2.20.1 | [link](https://www.git-scm.com/docs/git-clone)
