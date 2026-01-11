@@ -1,5 +1,6 @@
 | Command | Description | Note | Version | Docs |
 |:--- |:--- |:--- |:--- |:--- |
+| `gh alias set <alias_name> '<command>'` | create alias for the given command | command can have arguments designated with a dollar sign notation e.g. `$1` | 2.83.2 | [link](https://cli.github.com/manual/gh_alias_set) |
 | `gh config get <key>` | get a value for the settings key | | 2.83.2 | [link](https://cli.github.com/manual/gh_config_get) |
 | `gh config list` | list all confuration settings for github cli | | 2.83.2 | [link](https://cli.github.com/manual/gh_config) |
 | `gh config set <key> <value>` | set a value for the settings key | e.g. `gh config set editor vim` | 2.83.2 | [link](https://cli.github.com/manual/gh_config_set) |
