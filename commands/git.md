@@ -182,3 +182,4 @@
 | `git worktree list` | list all locally created worktrees of the repository | | 2.7.6 | [link]( https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-list) |
 | `git worktree prune` | delete working tree information | usefull to use after working tree is deleted by OS command | 2.5.6 | [link](https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-prune) |
 | `git worktree remove <worktree>` | remove working tree by deleting working tree from the disk | only clean working tree can be removed | 2.39.0 | [link](https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-remove) |
+| `git checkout --conflict=merge <file_path>` | recreate merge conflict after conflict resolution has been done | command to succeed resolved files must be staged | 2.0.5 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-gitcheckout-f--ours--theirs-m--conflictstyle--pathspec) |
