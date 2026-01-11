@@ -25,6 +25,7 @@
 | `git branch <branch_name>` | create new local branch | | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt-ltbranchnamegt) |
 | `git branch <branch_name> <remote_name>/<remote_branch_name>` | create new local branch that tracks remote branch | given remote branch must exist | 2.20.1 | [link](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt-ltbranchnamegt) |
 | `git checkout -` | move `HEAD` to the previous position | checks out previously checked out branch if nothing has been commited since the branch switching | 2.21.0 | |
+| `git checkout --conflict=merge <file_path>` | recreate merge conflict after conflict resolution has been done | command to succeed resolved files must be staged | 2.0.5 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-gitcheckout-f--ours--theirs-m--conflictstyle--pathspec) |
 | `git checkout -b <branch_name>` | create new local branch and switch to it | | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-emgitcheckoutem-b-Bltnewbranchgtltstartpointgt) |
 | `git checkout -b <branch_name> <tag_name>` | create new local branch with tagged commit as a head and switch to it | | 2.20.1 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-emgitcheckoutem-b-Bltnewbranchgtltstartpointgt) |
 | `git checkout -b <local_branch_name> <remote_name>/<remote_branch_name>` | create new local branch with the given name which tracks remote branch and switch to that local branch | | 2.20.1 |[link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-emgitcheckoutem-b-Bltnewbranchgtltstartpointgt) |
@@ -166,6 +167,7 @@
 | `git status` | show the working tree status | | 2.20.1 | [link](https://git-scm.com/docs/git-status) |
 | `git status -s` | show the working tree status in the short form | | 2.20.1 | [link](https://git-scm.com/docs/git-status#Documentation/git-status.txt--s) |
 | `git tag --sort -v:refname` | list tags sorted in reverse natural order | | 2.37.1 | [link](https://git-scm.com/docs/git-tag#_name) |
+| `git tag --sort=-taggerdate` | list tags ordered descending by the date of the creation | 2.0.5 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt---sortkey) |
 | `git tag -a <tag_name> -m "<message>"` | create new annotated tag with the message on the most recent tag | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--mltmsggt) |
 | `git tag -a <tag_name> -s`| create new annotated tag on the most recent commit and sign it | prior to this command GPG key must be generated and `user.signingkey` variable must be set in the git configuration file | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt--s) |
 | `git tag -a <tag_name> <commit_hash>` | create new annotated tag that refer to a given commit hash | | 2.20.1 | [link](https://git-scm.com/docs/git-tag#Documentation/git-tag.txt-ltcommitgt) |
@@ -180,4 +182,3 @@
 | `git worktree list` | list all locally created worktrees of the repository | | 2.7.6 | [link]( https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-list) |
 | `git worktree prune` | delete working tree information | usefull to use after working tree is deleted by OS command | 2.5.6 | [link](https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-prune) |
 | `git worktree remove <worktree>` | remove working tree by deleting working tree from the disk | only clean working tree can be removed | 2.39.0 | [link](https://git-scm.com/docs/git-worktree#Documentation/git-worktree.txt-remove) |
-| `git checkout --conflict=merge <file_path>` | recreate merge conflict after conflict resolution has been done | command to succeed resolved files must be staged | 2.0.5 | [link](https://git-scm.com/docs/git-checkout#Documentation/git-checkout.txt-gitcheckout-f--ours--theirs-m--conflictstyle--pathspec) |
