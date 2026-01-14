@@ -115,6 +115,7 @@
 | `git push <remote_name> <remote_name>/<old_remote_branch_name>:refs/heads/<new_remote_branch_name> :<old_remote_branch_name>` | rename remote branch name | all local branches that tracked old remote branch do not automatically track newly created remote branch after invoking this two commands | 2.20.1 | [link](https://git-scm.com/docs/git-push#_name) | 
 | `git push <remote_name> <tag_name>` | send local tag to the remote | | 2.20.1 | [link](https://git-scm.com/docs/git-push#_name) |
 | `git rebase --onto <new_base_branch_name> <old_base_branch_name>` | rebase checked out branch onto the new base branch by moving commits starting from the old base branch | | 2.0.5 | [link](https://git-scm.com/docs/git-rebase#_transplanting_a_topic_branch_with_onto) |
+| `git rebase --whitespace=fix HEAD~` | trim whitespaces in the files of the last commit using rebasing | | | |
 | `git rebase -i <commit-hash>~` | edit commit back from the history through interactive rebase; use `edit` command instead of `pick` for the particular commit; ammend the commit or reset changes of it and make a new commit; after that continue rebase; | | 2.52.0 | [link](https://stackoverflow.com/a/1186549/6359607) |
 | `git rebase -i HEAD~<number>` | open default editor and interactively change the history of the given number of the most recent commits | | 2.20.1 | [link](https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt--i) |
 | `git rebase <branch_name>` | rebase current local branch onto the given one | | 2.20.1 | [link](https://git-scm.com/docs/git-rebase#_description) |
