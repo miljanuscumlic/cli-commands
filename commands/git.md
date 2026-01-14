@@ -69,7 +69,6 @@
 | `git log --author="<author_name>" -- <directory_name>/ ` | show commits of the given author of the changed files that belongs to a specified directory | `<author_name>` can be a sub-string of the actual author name | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---authorltpatterngt) |
 | `git log --follow -- <file_path>` | show all commits in which the file has been changed including the commits before file being renamed | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---follow) |
 | `git log --grep=<pattern>` | show commits which messages match specified regular expression pattern | | 2.20.1 | [link](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt---grepltpatterngt) |
-| `git log --left-right <first_branch_name>..<second_branch_name>` | list of all commits contained in the first branch and not in the second branch | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---left-right) |
 | `git log --oneline` | show concise one line information about the commits | | 2.20.1 | [link](https://git-scm.com/docs/git-log#Documentation/git-log.txt---oneline) |
 | `git log --oneline --graph <branch_name1> <branch_name2>` | decoratively show the union of all the commits of the given branches | | 2.37.2 | [link](https://www.git-scm.com/docs/git-log#_description) | 
 | `git log --pretty=format:"%h %s" --graph` | show hash and subject of all commits and connect them in a graph | | 2.20.1 | [link](https://git-scm.com/docs/git-log#_pretty_formats) |
