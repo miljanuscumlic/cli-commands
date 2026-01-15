@@ -5,6 +5,7 @@
 | `:%s/<serach_term_1>/<search_term_2>/gc` | find the first search term and replace it with the second one with confirmation before every replacement | | 5.1.4 | |
 | `:%y` | copy all lines | | 5.1.4 | |
 | `:<<` | de-indent line by the number of spaces specified by the `shiftwidh` property | `shiftwidh` defines number of spaces for indentation | 5.1.4 | |
+| `:<line_number>` | jump to the specified line | | 5.1.4 | |
 | `:<range>!<ext_filter> <filter_args>` | filter a range of lines through an external program | without the `<range>`, only the current line is filtered, range will automaticaly become `'<,'>` for visual selection | 5.1.4 | |
 | `:>>` | indent line by the number of spaces specified by the `shiftwidh` property | `shiftwidh` defines number of spaces for indentation | 5.1.4 | |
 | `:file` | show the filename | | 5.1.4 | |
