@@ -143,10 +143,10 @@
 | `snap refresh` | update all snap packages | needs `sudo` | | |
 | `snap remove <package_name>` | uninstall snap package | needs `sudo` | | |
 | `source <file_name>` | execute shell script | file have to be executable shell file | | |
-| `su` | switch to the `root` user | needs `sudo` | | |
+| `su` | switch to the `root` user with privileges of the `root` user | needs `sudo` and knowledge of the `root`'s password | | |
 | `su - <user_name>` | switch the user | | | |
 | `su <user_name>` | switch the user while keeping the environment of the current one | | | |
-| `sudo -i` | switch to the `root` user | by switching to the `root` user this way, one does not have to know the `root` account password | | |
+| `sudo -i` | switch to the `root` user with a new shell environment and change directory to the `root`'s home directory | by switching to the `root` user this way, one does not have to know the `root` account password | | |
 | `sudo -s` | switch to the `root` user while keeping the environment of the current one | | | |
 | `sudo <command>` | temporally grant the administrative rights of the `root` account | needs to be used only on restricted commands | | | 
 | `systemctl disable <service_name>.service` | disable service from starting on the next boot | needs `sudo` | | |
