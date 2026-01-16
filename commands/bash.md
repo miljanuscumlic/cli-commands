@@ -94,6 +94,7 @@
 | `gzip -dk <file_name>` | decompress a file while keep original compressed file | | | |
 | `head -<n> <file_path>` | print the first n lines of the given file to the standard output | | | |
 | `head <file_path>` | print the first 10 lines of the given file to the standard output | | | |
+| `help <builtin>` | display usage information of the given bash builtin | | | |
 | `history` | list of previously used bash commands | | | |
 | `history -d <number>` | delete the line from a history denoted with `<number>` | reenumerates the history after line deletion | | |
 | `hostname -I` | display private IP address | | | |
