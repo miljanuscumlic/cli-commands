@@ -9,6 +9,7 @@
 | `<<file_name>` | redirect content of the given file to the stdin | | | |
 | `<program_name> &>/dev/null &disown` | start program, detach stdin, stdout and stderr from the console and continue using terminal | | | |
 | `<shell_variable_name>=<value>` | create shell variable in this session | | | |
+| `<variable_name>=$(<command>)` | set current session's variable with the given name to be an alias for a given command | call `echo $<variable_name>` for executing the command | | |
 | `>>word 2>&1` | redirect stdin and stderr to the given file by appending to the file's end | | | |
 | `>word 2>&1` | redirect stdin and stderr to the given file by overriding it's content | | | |
 | `[ -d /<directory_name> ] && echo 'Exist' \|\| echo 'Doesn't exist'` | test whether a directory exists | blank spaces around square brackets are mandatory | | |
