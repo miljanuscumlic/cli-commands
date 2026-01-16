@@ -48,6 +48,7 @@
 | `chmod [ugoa][+-=][rwxXst] <file_name>` | change file permissions of the given file | | | |
 | `chown <group_name>:<user_name> <file_name>` | change group and user permision of the given file | | | |
 | `chown <user_name> <file_name>` | change the user owner of the file | | | |
+| `compgen -b` | list all bash builtins | | | |
 | `compgen -g` | list all the groups of the users | | | |
 | `compgen -v` | list all environment variables | | | |
 | `cp <source> <destination>` | copy the file | | | |
