@@ -170,6 +170,7 @@
 | `test -f <file_name> && echo 'Exist' \|\| echo 'Doesn't exist'` | test whether a file exists | blank spaces around square brackets are mandatory | | |
 | `time <bash_command>` | show time needed for the execution of the given bash command | | | |
 | `touch <file_name>` | create empty file with the given name | | | |
+| `type <command> -a` | display command types of all executables with a given name | includes commands, builtins, aliases and functions | | | |
 | `uname -a` | show distribution's Linux kernel version with some more system information | | | |
 | `uname -r` | show distribution's Linux kernel version | | | |
 | `unset <variable_name>` | delete environment variable | | | |
