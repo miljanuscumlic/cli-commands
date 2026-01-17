@@ -10,6 +10,9 @@
 | `:>>` | indent line by the number of spaces specified by the `shiftwidh` property | `shiftwidh` defines number of spaces for indentation | 5.1.4 | |
 | `:file` | show the filename | | 5.1.4 | |
 | `:g/^$/d` | delete all blank lines in the working file | | 5.1.4 | |
+| `:m <+number>` | move current line given number of lines down | | | |
+| `:m <-number>` | move current line given number of lines up | | | |
+| `:m <number>` | move current line to the given line number  | | | |
 | `:set list` | display whitespace characters | spaces are shown as ` `, tabs as `^I`, and the end-of-line as a `$`| 5.1.4 | |
 | `:set mouse=` | disable mouse | | 5.1.4 | |
 | `:set mouse=a` | enable mouse | | 5.1.4 | |
