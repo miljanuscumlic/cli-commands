@@ -2,16 +2,16 @@
 |:--- |:--- |:--- |:--- |:--- |
 | `/<search_term>` | find the term going forward | type `n` for the next find and `b` for the previous one | 5.1.4 | |
 | `:%d` | delete all lines | | 5.1.4 | |
-| `:%s/<serach_term_1>/<search_term_2>/gc` | find the first search term and replace it with the second one with confirmation before every replacement | | 5.1.4 | |
+| `:%s/<search_term_1>/<search_term_2>/gc` | find the first search term and replace it with the second one with confirmation before every replacement | | 5.1.4 | |
 | `:%y` | copy all lines | | 5.1.4 | |
 | `:<<` | de-indent line by the number of spaces specified by the `shiftwidh` property | `shiftwidh` defines number of spaces for indentation | 5.1.4 | |
 | `:<line_number>` | jump to the specified line | | 5.1.4 | |
-| `:<range>!<ext_filter> <filter_args>` | filter a range of lines through an external program | without the `<range>`, only the current line is filtered, range will automaticaly become `'<,'>` for visual selection | 5.1.4 | |
+| `:<range>!<ext_filter> <filter_args>` | filter a range of lines through an external program | without the `<range>`, only the current line is filtered, range will automatically become `'<,'>` for visual selection | 5.1.4 | |
 | `:>>` | indent line by the number of spaces specified by the `shiftwidh` property | `shiftwidh` defines number of spaces for indentation | 5.1.4 | |
 | `:file` | show the filename | | 5.1.4 | |
 | `:g/^$/d` | delete all blank lines in the working file | | 5.1.4 | |
-| `:m <+number>` | move current line given number of lines down | | | |
-| `:m <-number>` | move current line given number of lines up | | | |
+| `:m +<number>` | move current line down to after current line number plus the given number of lines | `:m +<number>` is abbreviation for `:m .+<number>`;  `:m +1` moves current line down one line | | |
+| `:m -<number>` | move current line up to after current line number minus the given number of lines | `:m -2` moves current line up one line  | | |
 | `:m <number>` | move current line to the given line number  | | | |
 | `:set list` | display whitespace characters | spaces are shown as ` `, tabs as `^I`, and the end-of-line as a `$`| 5.1.4 | |
 | `:set mouse=` | disable mouse | | 5.1.4 | |
