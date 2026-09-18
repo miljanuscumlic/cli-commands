@@ -16,12 +16,14 @@
 | `:m -<number>` | move current line up to after current line number minus the given number of lines | `:m -2` moves current line up one line  | | |
 | `:m <number>` | move current line to the given line number  | | | |
 | `:set ignorecase` | set case-insensitive search mode | | 5.1.4 | |
-| `:set list` | display whitespace characters | spaces are shown as ` `, tabs as `^I`, and the end-of-line as a `$`| 5.1.4 | |
+| `:set list` | display white space characters | spaces are shown as ` `, tabs as `^I`, and the end-of-line as a `$`| 5.1.4 | |
 | `:set mouse=` | disable mouse | | 5.1.4 | |
 | `:set mouse=a` | enable mouse | | 5.1.4 | |
-| `:set nolist` | hide whitespace characters | | 5.1.4 | |
+| `:set nolist` | hide white space characters | | 5.1.4 | |
 | `:set nonumber` | hide line numbers | alias command is `:set nonu` | 5.1.4 | |
+| `:set nospell` | disable set spellchecker | | 5.3.9 | |
 | `:set number` | display line numbers | alias command is `:set nu` | 5.1.4 | |
 | `:set smartcase` | set search mode that automatically switch to a case-sensitive search if any capital letters is used in a search term | command applies only when `set ignorecase` is already active  | 5.1.4 | | 
+| `:set spell spelllang=<language_code>` | set spellchecking language and region | to move from one misspelled to the other use `[s` and `]s`; when on the word press `z=` to get list of alternatives | 5.3.9 | | 
 | `:term` | open terminal window | 5.1.4 | |
 | `?<search_term>` | find the term going backward | type `n` for the next find and `b` for the previous one | 5.1.4 | |
