@@ -3,6 +3,7 @@
 | `/<search_term>` | search for the term going forward from the cursor | type `n` for the next find and `b` for the previous one | 5.1.4 | |
 | `/\c<search_term>` | case-insensitive search for the term going forward from the cursor | type `n` for the next find and `b` for the previous one | 5.1.4 | |
 | `: set spellfile=<file_path>` | set file for internal dictionary holding words not containing in official dictionary | name of the file must end in `.<encoding>.add` e.g. `en.utf-8.add` | 5.3.9 | |
+| `:!ls %:p` | get full path to the current file | | 5.3.9 | |
 | `:%!jq`| pretty-print JSON object in an opened file | `jq` package have to be installed on the system | 5.1.4 | |
 | `:%d` | delete all lines | | 5.1.4 | |
 | `:%s/<search_term_1>/<search_term_2>/gc` | find the first search term and replace it with the second one with confirmation before every replacement | | 5.1.4 | |
