@@ -3,6 +3,7 @@
 | `git add -A` | add, remove and modify index entries to match the state of the working tree | stages all the changes of the working tree including untracked files | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--A) |
 | `git add -N <file_path>` | track given file and add it to the index without its content | | 2.20.1 | [link](https://www.git-scm.com/docs/git-add#Documentation/git-add.txt--N) |
 | `git add -i -p <file_path>` | interactively add only parts of the changes between index and the working tree for a given file | | 2.0.5 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--p) |  
+| `git add -p <file_name>` | select parts of the changed lines to be staged | git will divide changes into hunks that could be separately staged | 2.53.0 | [link](https://stackoverflow.com/a/1085191/6359607) |
 | `git add -u` | remove and modify index entries to match the state of deleted and modified files in the working tree | stages modifications and deletions, but not new files | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt--u) |
 | `git add .` | add and modify index entries to match the state of the new and modified files in the working tree | stages new files and modifications, but not deletions | 2.20.1 | [link](https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203) |
 | `git add . ':!<file_path>'` | add all files to the index accept the given one | | 2.37.1 | |
