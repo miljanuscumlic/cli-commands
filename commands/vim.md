@@ -27,4 +27,5 @@
 | `:set smartcase` | set search mode that automatically switch to a case-sensitive search if any capital letters is used in a search term | command applies only when `set ignorecase` is already active  | 5.1.4 | | 
 | `:set spell spelllang=<language_code>` | set spellchecking language and region | to move from one misspelled to the other use `[s` and `]s`; when on the word press `z=` to get list of alternatives | 5.3.9 | | 
 | `:term` | open terminal window | 5.1.4 | |
+| `:w ! sudo tee %` | save currently editing file when don't have permission to do so | % register always contains the name of the file | 5.3.9 | | 
 | `?<search_term>` | find the term going backward | type `n` for the next find and `b` for the previous one | 5.1.4 | |
