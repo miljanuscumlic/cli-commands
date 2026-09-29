@@ -1,5 +1,7 @@
 | Command | Description | Note | Version | Docs |
 |:--- |:--- |:--- |:--- |:--- |
+| `npm audit` | display vulnerabilities among installed npm packages | | 9.2.0 | [link](https://docs.npmjs.com/cli/v9/commands/npm-audit) |
+| `npm audit fix` | try to fix vulnerabilities by installing new npm packages | not all vulnerabilities can be fixed automatically | 9.2.0 | [link](https://docs.npmjs.com/cli/v9/commands/npm-audit) |
 | `npm ci` | clean install of dependencies | its primary use is with continuous integration, test platforms... | 9.9.4 | [link](https://docs.npmjs.com/cli/v9/commands/npm-ci) |
 | `npm config get cache` | show path to the npm cache directory | | 9.2.0 | [link](https://docs.npmjs.com/cli/v9/commands/npm-config) |
 | `npm i` | install package and its dependencies | `package.json` must be present in a directory; command respects contetnt of `package-lock.js` file | 9.2.0 | [link](https://docs.npmjs.com/cli/v9/commands/npm-install) |
