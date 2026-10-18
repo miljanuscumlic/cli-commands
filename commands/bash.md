@@ -43,11 +43,11 @@
 | `cat /etc/os-release` | display information about the operating system | | | |
 | `cat /etc/passwd` | list all users with some additional information | | | |
 | `cat /proc/meminfo` | information about the RAM memory | | | |
-| `cat /proc/version_signature` | display distribution kernel-release and the manline kernel-version numbers | | | |
+| `cat /proc/version_signature` | display distribution kernel-release and the mainline kernel-version numbers | | | |
 | `cd -` | go to the previously visited directory | | | |
 | `chgrp group <file_name>` | change group ownership of the given file | | | |
 | `chmod [ugoa][+-=][rwxXst] <file_name>` | change file permissions of the given file | | | |
-| `chown <group_name>:<user_name> <file_name>` | change group and user permision of the given file | | | |
+| `chown <group_name>:<user_name> <file_name>` | change group and user permission of the given file | | | |
 | `chown <user_name> <file_name>` | change the user owner of the file | | | |
 | `compgen -b` | list all bash builtins | | | |
 | `compgen -g` | list all the groups of the users | | | |
@@ -81,7 +81,7 @@
 | `getconf -a` | list all configuration variables with their values | | | |
 | `getent group` | list all groups of users | | | |
 | `getent group <group_name>` | list all users of the given group | | | |
-| `grep -ril <text> <directory_path>` | recursively search for every file containing text; display only filepaths not their content | | | | 
+| `grep -ril <text> <directory_path>` | recursively search for every file containing text; display only file paths not their content | | | | 
 | `grep -rn <directory_path> -e <text_pattern>` | recursively search for every file containing text; display line number and line containing text pattern | | | |
 | `grep ^[^#] /etc/apt/sources.list /etc/apt/sources.list.d` | list all package repositories on the system | | | |
 | `groupadd <group_name>` | create new group of users | needs `sudo` | | |
@@ -89,7 +89,7 @@
 | `groupmod --new-name <new_group_name> <old_group_name>` | rename a group of users | needs `sudo` | | |
 | `groups <user_name>` | show all the groups that belongs a user with the given name | | | |
 | `gsettings get <schema_name> <key>` | get a value for a given key of the given gnome settings schema | | | |
-| `gsettings get org.gnome.shell favorite-apps` | list pinned program shorcuts in the gnome taskbar | | | |
+| `gsettings get org.gnome.shell favorite-apps` | list pinned program shortcuts in the gnome taskbar | | | |
 | `gsettings list-keys <schema_name>` | list all the keys of the given gnome settings schema | | | |
 | `gsettings list-recursively` | list all key-value pairs having the term | | | |
 | `gsettings set <schema_name> <key> "['<value>]"` | set a value for a gnome setting key | | | |
@@ -98,9 +98,9 @@
 | `head <file_path>` | print the first 10 lines of the given file to the standard output | | | |
 | `help <builtin>` | display usage information of the given bash builtin | | | |
 | `history` | list of previously used bash commands | | | |
-| `history -d <number>` | delete the line from a history denoted with `<number>` | reenumerates the history after line deletion | | |
+| `history -d <number>` | delete the line from a history denoted with `<number>` | re-enumerates the history after line deletion | | |
 | `hostname -I` | display private IP address | | | |
-| `ip add` | list IP adresses associated on all network interfaces | | | |
+| `ip add` | list IP addresses associated on all network interfaces | | | |
 | `la -la \| grep "^d" && ls -la \| grep "^-" && ls -la \| grep "^l"` | display all the directories, files and links in that order | | | |
 | `ldd <file_name>` | display shared library dependencies of the executable file or shared library | | | |
 | `ln -s <file_path> <symbolic_link_path>` | create symbolic link | needs `sudo` | | |
@@ -131,7 +131,7 @@
 | `reboot` | restart the system | needs `sudo` | | |
 | `rm -i <file_path>` | delete a file with prompting before a removal | | | |
 | `rm -rf ~/.local/share/Trash/*` | empty the trash | | | |
-| `sed -i '/s/<term1>/<term2>/g' <file_name>` | replace every occurence of the `<term1>` with the `<term2>` inside the given file | | | |
+| `sed -i '/s/<term1>/<term2>/g' <file_name>` | replace every occurrence of the `<term1>` with the `<term2>` inside the given file | | | |
 | `sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list` | change urls of the old Ubuntu repositories so packages can be updated | needs `sudo` | | [link](https://askubuntu.com/a/91821) |
 | `set` | print all environment variables, shell variables and shell functions | | | |
 | `set -o emacs` | use emacs keybindings | this is the default bash behavior | | | 
@@ -140,7 +140,7 @@
 | `shutdown` | Schedule shut down event in one minute | needs `sudo` | | |
 | `shutdown now` | Immediately shut down the system | needs `sudo` | | |
 | `snap find <string>` | search snap packages | | | |
-| `snap install <package_name>` | install a snap package | | | |
+| `snap install <package_file_path> --dangerous` | install a snap package from a file | | | |
 | `snap install <package_name>` | install a snap package | needs `sudo` | | |
 | `snap list` | list installed snap packages | | | |
 | `snap refresh` | update all snap packages | needs `sudo` | | |
@@ -160,7 +160,7 @@
 | `systemctl list-units --type service --state running` | list services currently running | | | |
 | `systemctl reload <service_name>.service` | restart the service without reloading its configuration | | | |
 | `systemctl restart <service_name>.service` | restart the service with reloading its configuration | | | |
-| `systemctl show <service_name>.service` | show properties of the the service | | | |
+| `systemctl show <service_name>.service` | show properties of the service | | | |
 | `systemctl start <service.name>.service` | start the service | needs `sudo` | | |
 | `systemctl start <service_name>.service` | activate the service | | | |
 | `systemctl status <service_name>.service` | service status | | | |
