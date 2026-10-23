@@ -140,10 +140,14 @@
 | `shutdown` | Schedule shut down event in one minute | needs `sudo` | | |
 | `shutdown now` | Immediately shut down the system | needs `sudo` | | |
 | `snap find <string>` | search snap packages | | | |
+| `snap info <package_name>`| list all available snap package versions on all available channels | | | |
 | `snap install <package_file_path> --dangerous` | install a snap package from a file | | | |
 | `snap install <package_name>` | install a snap package | needs `sudo` | | |
+| `snap install <package_name> --channel=<channel_name>` | install snap package from designated channel | needs `sudo` | | |
 | `snap list` | list installed snap packages | | | |
 | `snap refresh` | update all snap packages | needs `sudo` | | |
+| `snap refresh --tracking <package_name>` | display channel installed snap package is tracking | | | |
+| `snap refresh <package_name> --channel=<channel_name>` | switch channel of installed snap package | needs `sudo` | | |
 | `snap remove <package_name>` | uninstall snap package | needs `sudo` | | |
 | `source <file_name>` | execute shell script | file have to be executable shell file | | |
 | `su` | switch to the `root` user with privileges of the `root` user | needs `sudo` and knowledge of the `root`'s password | | |
