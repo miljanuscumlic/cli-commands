@@ -147,6 +147,7 @@
 | `snap list` | list installed snap packages | | | |
 | `snap refresh` | update all snap packages | needs `sudo` | | |
 | `snap refresh --hold=<duration> <package_name>` | postpone snap updates for the specified package | needs `sudo`; duration can be expressed in seconds (s), minutes (m) and hours (h); `forever` is also possible | | [link](https://snapcraft.io/docs/how-to-guides/manage-snaps/manage-updates/) |
+| `snap refresh --list` | show available updates for installed snap packages | does not install them; they would be updated with the next `refresh` command | | |
 | `snap refresh --tracking <package_name>` | display channel installed snap package is tracking | | | |
 | `snap refresh --unhold <package_name>` | remove refresh hold for the specified package | need `sudo` | | [link](https://snapcraft.io/docs/how-to-guides/manage-snaps/manage-updates/) |  
 | `snap refresh <package_name> --channel=<channel_name>` | switch channel of installed snap package | needs `sudo` | | |
