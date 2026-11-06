@@ -12,11 +12,13 @@
 | `:<line_number>` | jump to the specified line | | 5.1.4 | |
 | `:<range>!<ext_filter> <filter_args>` | filter a range of lines through an external program | without the `<range>`, only the current line is filtered, range will automatically become `'<,'>` for visual selection | 5.1.4 | |
 | `:>>` | indent line by the number of spaces specified by the `shiftwidh` property | `shiftwidh` defines number of spaces for indentation | 5.1.4 | |
+| `:delmarks <bookmark_name>` | delete given bookmark | | 5.3.9 | |
 | `:file` | show the filename | | 5.1.4 | |
 | `:g/^$/d` | delete all blank lines in the working file | | 5.1.4 | |
 | `:m +<number>` | move current line down to after current line number plus the given number of lines | `:m +<number>` is abbreviation for `:m .+<number>`;  `:m +1` moves current line down one line | | |
 | `:m -<number>` | move current line up to after current line number minus the given number of lines | `:m -2` moves current line up one line  | | |
 | `:m <number>` | move current line to the given line number  | | | |
+| `:marks` | list all bookmarks | | 5.3.9 | |
 | `:set ignorecase` | set case-insensitive search mode | | 5.1.4 | |
 | `:set list` | display white space characters | spaces are shown as ` `, tabs as `^I`, and the end-of-line as a `$`| 5.1.4 | |
 | `:set mouse=` | disable mouse | | 5.1.4 | |
